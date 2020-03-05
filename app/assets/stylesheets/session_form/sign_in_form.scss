@@ -1,0 +1,31 @@
+.login-form-container{
+    // text-align: center;
+    // display: block;
+    // background-color:rgb(91, 176, 207);
+    width: 400px ;
+    height: 500px;
+    border: 2px solid rgb(226, 210, 210);
+    margin: 6% auto;
+    position: relative;
+    padding: 5px;
+  
+}
+// .login-form-box {
+//     // margin-left: 400px;
+// }
+#top_welcome {
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(35, 133, 189);
+    // position: absolute;
+}
+.session-submit{
+    background-color: crimson;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    border-radius: 30px;
+    font-size: medium;
+}
