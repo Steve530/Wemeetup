@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <div className="hero"> 
-      <div className="login-signup">
-        <div id="btn1"></div>
-        <Link to="/login"><button type='button' className="toggle_btn">Login</button></Link>
-        {/* &nbsp;or&nbsp; */}
-        <Link to="/signup"><button type='button' className="toggle_btn">Sign up!</button></Link>
+      <div className="login-signup">  
+
+        <Link to="/login" className="toggle_btn">Log in</Link>
+        <Link to="/signup" className="toggle_btn" >Sign up</Link>
+     
+      {/* <img src="https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2020/01/lord_of_the_rings_gollum.jpg?itok=-ndMZJ1B" alt=""/> */}
       </div>
     </div>
   );

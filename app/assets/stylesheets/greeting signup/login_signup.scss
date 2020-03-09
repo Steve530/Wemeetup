@@ -2,38 +2,34 @@
     margin: 0;
     padding: 0;
 }
-.hero{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+#logoScript {
+    width: 99px;
+    height: 99px;
+    // background-position: center;
+    // background-size: cover;
+    position: absolute;
+    left: 23px;
+    z-index: 3;
 }
 
-.login-signup{
+.login-signup {
  width: 220px;
- margin: 35px auto;
- position: relative;
- box-shadow: 0 0 20px 9px rgb(198, 99, 194);
- border-radius: 30px;
+ margin-right: 5px auto;
+ position: absolute;
+ right: 10px;
+ top: 30px;
+ text-decoration: none;
+//  box-shadow: 0 0 20px 9px rgb(198, 99, 194); .toggle_btn
+//  border-radius: 30px;
 }
-.toggle_btn{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0px;
-    outline:none;
-    position: relative;
-    font-size: medium;
-}
-#btn1 {
-    top: 0;
-    left: 0 px;
+ .toggle_btn{
+text-decoration: none;
+margin-right: 20px;
+font-size: large;
+// background-color: aqua;
+} 
+.header-group {
+    display: block;
     position: absolute;
-    width: 110;
-    height: 100%;
-    background-color: blueviolet;
-    // background: linear-gradient(to right,#ff105f,#ffad06 ) ;
-    border-radius: 30px;
-    transition: .5s;
+    right: 15px;
 }
