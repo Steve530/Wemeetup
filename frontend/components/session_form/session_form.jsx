@@ -10,7 +10,9 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.demouser = this.demouser.bind(this);
   }
-
+  componentWillUnmount() {
+    this.props.clearSessionErrors();
+  }
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -45,6 +47,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    
     return (
       <div className="login-form-container">
         <div className="welcome-line"></div>

@@ -22,13 +22,14 @@ const App = () => (
       <Link to="/" className="header-link">
         <h1 id='top_welcome'> My Hobbits :) </h1>
       </Link>
-      <GreetingContainer />
+      <GreetingContainer /> 
     </header>
     <Switch>
 
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
       <Route exact path="/" component={Splash} />
+      <Redirect to='/'/>
     </Switch>
   </div>
 );

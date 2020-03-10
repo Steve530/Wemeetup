@@ -73,3 +73,8 @@ div label p {
     margin-top: 10px;
     font-size: large;
 }
+.smalllink {
+    text-decoration: none;
+    font-size: small;
+    background-color: saturate($color: #c94343, $amount: 0);
+}
