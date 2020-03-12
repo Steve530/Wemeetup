@@ -8,7 +8,7 @@ export const CLEAR_USER_ERRORS = "CLEAR_USER_ERRORS";
 
 export const receiveCurrentUser = currentUser => ({
   type: RECEIVE_CURRENT_USER,
-  currentUser
+  currentUser: currentUser
 });
 
 export const logoutCurrentUser = () => ({
@@ -52,8 +52,8 @@ export const clearSessionErrors = () => {
     return dispatch({ type: CLEAR_SESSION_ERRORS });
   };
 };
-export const clearUserErrors = () => {
-  return dispatch => {
-    return dispatch({ type: CLEAR_USER_ERRORS });
-  };
-};
+// export const clearUserErrors = () => {
+//   return dispatch => {
+//     return dispatch({ type: CLEAR_USER_ERRORS });
+//   };
+// };

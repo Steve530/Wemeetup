@@ -7,7 +7,7 @@
     // display: block;
     // background-color:rgb(91, 176, 207);
     width: 520px ;
-    height: 532px;
+    height: 552px;
     border: 2px solid rgb(226, 210, 210);
     margin: 6% auto;
     position: relative;
@@ -27,15 +27,14 @@
 }
 .session-submit{
     background-color: crimson;
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 40px;
     text-align: center;
     color: white;
     font-weight: bolder;
-    border-radius: 5px;
+    border-radius: 1px;
     font-size:21px;
-    // margin-bottom: 16px;
-}
+ }
 .login_or_signup{
   
     border-bottom: 2px solid rgb(226, 210, 210);
@@ -48,7 +47,7 @@
  }
  input {
     width: 470px;
-    height: 40px;
+    height: 36px;
     // opacity: 70%;
     margin-left: 10px;
     font-size: large;
@@ -64,17 +63,23 @@ div label p {
 .demo-submit {
     width: 100px;
     height: 30px;
-    background-color: #d54ff7;
+    background-color: #cfadd8;
     text-align: center;
     border: 1px solid rgba(0,0,0,0.26);
     border-radius: 10px;
     position: absolute;
-    right: 25px;
+    // display: flex;
+  
     margin-top: 10px;
+    margin-left: 10px;
     font-size: large;
 }
 .smalllink {
     text-decoration: none;
     font-size: small;
     background-color: saturate($color: #c94343, $amount: 0);
+}
+.naveenwrong {
+    position: relative;
+    left: 25px;
 }
