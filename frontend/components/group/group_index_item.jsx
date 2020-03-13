@@ -31,7 +31,7 @@ class GroupIndexItem extends React.Component {
 
       <div className="group-index-item"  onClick={this.handleClick}>
         <div className="group-info">
-          <img src={picnum} />
+          <img src={this.props.group.picture_url} />
           <div className="group-info_text">
             <h4 id="group-item-name">{this.props.group.group_name}</h4>
           </div>

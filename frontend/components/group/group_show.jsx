@@ -28,11 +28,13 @@ class GroupShow extends React.Component {
         if (!this.props.group) {
             return null;
         }
+
+        debugger
         return(
             <div>
                 <p id='group_page_name'>{this.props.group.group_name}</p>
                 <div className="group-showpage">
-                    <img src={picnum} />
+                    <img src={this.props.group.picture_url} />
                 </div>
                 {/* <p id='description'>{this.props.group.description}</p> */}
                 <button className='join_group_btn'>Join Group</button>

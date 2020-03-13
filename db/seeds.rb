@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Group.destroy_all
+group1 = Group.create(group_name:'Make USA Great Again',picture_url:'./1.jpg')
