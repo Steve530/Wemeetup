@@ -11,11 +11,11 @@ const receiveAllGroups = (groups) => {
   }
 }
 
-const receiveGroup = ({group, users}) => {
+const receiveGroup = (payload) => {
+  
   return {
     type: RECEIVE_GROUP,
-    group,
-    users,
+    payload
     // events,
   }
 }

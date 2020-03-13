@@ -11,7 +11,9 @@ const groupsReducer = (oldState = {}, action) => {
     
     // case RECEIVE_MEMBERSHIP: 
     case RECEIVE_GROUP:
-      return merge({}, oldState, action.group );
+      
+      return {[action.payload.id]: action.payload}
+      // return merge({}, oldState, action.group );
 
     case REMOVE_GROUP:
       const newState = merge({}, oldState);

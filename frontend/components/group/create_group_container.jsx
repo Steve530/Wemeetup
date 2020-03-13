@@ -4,16 +4,17 @@ import React from 'react';
 import {createGroup} from '../../actions/group_actions';
 
 
-const msp = (state) => {
-
-  return null;
+const mstp = (state) => {
+  // debugger
+  
+  // return group: state.groups
 };
 
-const mdp = (dispatch) => {
+const mdtp = (dispatch) => {
   // debugger
   return {
     createGroup: (group) => dispatch(createGroup(group))
   }
 };
 
-export default connect(null, mdp)(CreateGroup);
+export default connect(mstp, mdtp)(CreateGroup);

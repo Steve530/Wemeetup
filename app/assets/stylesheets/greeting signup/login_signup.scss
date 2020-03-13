@@ -4,29 +4,30 @@
 }
 #logoScript {
     width: 99px;
-    height: 99px;
-    // background-position: center;
-    // background-size: cover;
+    height: 69px;
     position: absolute;
     left: 23px;
     z-index: 3;
 }
 
 .login-signup {
- width: 220px;
+ width: 320px;
  margin-right: 5px auto;
  position: absolute;
  right: 10px;
  top: 30px;
  text-decoration: none;
-//  box-shadow: 0 0 20px 9px rgb(198, 99, 194); .toggle_btn
-//  border-radius: 30px;
 }
  .toggle_btn{
 text-decoration: none;
 margin-right: 20px;
 font-size: large;
-// background-color: aqua;
+} 
+ .toggle_group{
+text-decoration: none;
+margin-right: 42px;
+font-size: larger;
+color: #00a2c7;
 } 
 .header-group {
     display: block;

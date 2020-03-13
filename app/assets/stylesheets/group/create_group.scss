@@ -4,7 +4,7 @@
   }
   
   .create-banner {
-    margin-top: 35px;
+    margin-top: 55px;
     height: 250px;
     background-image: url(https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-1.jpg);
     background-position: 0 -45px;
@@ -61,7 +61,7 @@
   
   .create-group-input {
     padding-top: 48px;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
     padding-left: 16px;
     padding-right: 16px;
   
@@ -74,16 +74,14 @@
     color: #a0a0a0;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-  
+    // margin-top: 40px;
     padding-left: 20px;
   }
-  
   
   .create-icon {
     width: 48px;
     height: auto;
     float: left;
-  
   }
   
   .create-group-input label {
@@ -107,7 +105,7 @@
     border-width: 1px;
     width: 688px;
     background-color: #fafafa;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     margin-left: 70px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
@@ -123,7 +121,7 @@
     border-width: 1px;
     width: 688px;
     background-color: #fafafa;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-left: 70px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -132,7 +130,7 @@
   
   #form-details {
     display: block;
-    height: 200px;
+    height: 100px;
     border-radius: 4px;
     /* outline: none; */
     border-style: solid;

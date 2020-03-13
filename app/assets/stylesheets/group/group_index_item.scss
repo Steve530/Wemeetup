@@ -3,17 +3,41 @@
     height: 300px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 15px;
+    position: relative;
+}
+.group-info_text {
+    color: rgb(93, 209, 135);
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    bottom: 35px;
+    margin-left: 24px;
+
+
 }
 .jimmy_group_pic {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
     flex-wrap: wrap;
-
-
+    // z-index: inherit 4;
 }
-#group-item-name {
-    margin-left: 65px;
+#groupsttt {
+    // text-align: center;
+    padding-top: 15px;
+    margin-left: 20px;
+}
+// #group-item-name {
+//     color: rgb(165, 15, 15);
+//     margin-left: 65px;
+//     // position: absolute;
+//     bottom: 10px;
+// }
+.groupandpics{
+    margin-top: 40px;
+    margin-left: 2px;
+
 }

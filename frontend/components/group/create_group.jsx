@@ -46,45 +46,45 @@ class CreateGroup extends React.Component {
             <div className='create-group-inputs-container'>
 
 
-            <div className="create-group-input">
+            {/* <div className="create-group-input">
             <img className="create-icon" src="https://secure.meetupstatic.com/s/img/5771697722992842330638/start_v2/globe.svg"/>
                
-            </div>
+            </div> */}
 
-            <div className="create-group-input">
-            <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
-                <span className="step-span">Step 1 of 3</span>
-              <label htmlFor='form-name'>What will your Meetup's name be?</label>
-                  <input 
-                    id="form-name"
-                    type="text" 
-                    value={this.state.group_name}
-                    onChange={this.update('group_name')}/>
-            </div>
-
-            <div className="create-group-input">
-            <img className="create-icon" src="https://secure.meetupstatic.com/s/img/545971442246927/start_v2/tag.svg"/>
-                <span className="step-span">Step 2 of 3</span>
-              <label htmlFor='form-description'>Describe who should join, and what your Meetup <br/>
-                will do.</label>
-                  <textarea 
-                    id="form-description"
-                    type="text" 
-                    value={this.state.description}
-                    onChange={this.update('description')}/>
-            </div>
-
-            <div className="create-group-input">
-            <img className="create-icon" src="https://secure.meetupstatic.com/s/img/533695931247066883484/start_v2/people.svg"/>
-                <span className="step-span">Step 3 of 3</span>
-              <label htmlFor='form-name'>What it means to be a Meetup</label>
-                  <ul>
-                    <li>Real, in-person conversations</li>
-                    <li>Open and honest intentions</li>
-                    <li>Always safe and respectful</li>
-                    <li>Put your members first</li>
-                  </ul>
+                <div className="create-group-input">
+                <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
+                    <span className="step-span">Step 1 of 3</span>
+                  <label htmlFor='form-name'>What will your Meetup's name be?</label>
+                      <input 
+                        id="form-name"
+                        type="text" 
+                        value={this.state.group_name}
+                        onChange={this.update('group_name')}/>
                 </div>
+
+                <div className="create-group-input">
+                  <img className="create-icon" src="https://secure.meetupstatic.com/s/img/545971442246927/start_v2/tag.svg"/>
+                      <span className="step-span">Step 2 of 3</span>
+                    <label htmlFor='form-description'>Describe who should join, and what your Meetup <br/>
+                      will do.</label>
+                        <textarea 
+                          id="form-description"
+                          type="text" 
+                          value={this.state.description}
+                          onChange={this.update('description')}/>
+                </div>
+
+                <div className="create-group-input">
+                <img className="create-icon" src="https://secure.meetupstatic.com/s/img/533695931247066883484/start_v2/people.svg"/>
+                    <span className="step-span">Step 3 of 3</span>
+                  <label htmlFor='form-name'>What it means to be a Meetup</label>
+                      <ul>
+                        <li>Real, in-person conversations</li>
+                        <li>Open and honest intentions</li>
+                        <li>Always safe and respectful</li>
+                        <li>Put your members first</li>
+                      </ul>
+                    </div>
                   
 
             </div>
