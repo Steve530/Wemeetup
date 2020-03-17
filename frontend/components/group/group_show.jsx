@@ -12,29 +12,17 @@ class GroupShow extends React.Component {
     }
     render(){
         // debugger
-        let picnum;
-        let idd = this.props.ownProps.match.params.groupId
-     if (idd%10 ===1) picnum = window.one
-     else if (idd%10 ===2) picnum = window.two
-     else if (idd%10 ===3) picnum = window.thr
-     else if (idd%10 ===4) picnum = window.fou
-     else if (idd%10 ===5) picnum = window.fiv
-     else if (idd%10 ===6) picnum = window.six
-     else if (idd%10 ===7) picnum = window.sev
-     else if (idd%10 ===8) picnum = window.eig
-     else if (idd%10 ===9) picnum = window.nin
-     else if (idd%10 ===0) picnum = window.ten
-
         if (!this.props.group) {
             return null;
         }
-
-        debugger
+        
+        let idd = this.props.ownProps.match.params.groupId % 27
+        // debugger
         return(
             <div>
                 <p id='group_page_name'>{this.props.group.group_name}</p>
                 <div className="group-showpage">
-                    <img src={this.props.group.picture_url} />
+                    <img src={`./${idd}.jpg`} />
                 </div>
                 {/* <p id='description'>{this.props.group.description}</p> */}
                 <button className='join_group_btn'>Join Group</button>

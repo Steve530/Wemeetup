@@ -16,22 +16,14 @@ class GroupIndexItem extends React.Component {
   render() {
     // const urls = `url(./pics/${}.jpg)`
       let picnum;
-     if (this.props.group.id%10 ===1) picnum = window.one
-     else if (this.props.group.id%10 ===2) picnum = window.two
-     else if (this.props.group.id%10 ===3) picnum = window.thr
-     else if (this.props.group.id%10 ===4) picnum = window.fou
-     else if (this.props.group.id%10 ===5) picnum = window.fiv
-     else if (this.props.group.id%10 ===6) picnum = window.six
-     else if (this.props.group.id%10 ===7) picnum = window.sev
-     else if (this.props.group.id%10 ===8) picnum = window.eig
-     else if (this.props.group.id%10 ===9) picnum = window.nin
-     else if (this.props.group.id%10 ===0) picnum = window.ten
+      let idd = this.props.group.id % 27
+    
     return (
       // <li style={{backgroundImage: `urls()`}} onClick={this.handleClick}>
 
       <div className="group-index-item"  onClick={this.handleClick}>
         <div className="group-info">
-          <img src={this.props.group.picture_url} />
+            <img src={`./${idd}.jpg`} />
           <div className="group-info_text">
             <h4 id="group-item-name">{this.props.group.group_name}</h4>
           </div>
