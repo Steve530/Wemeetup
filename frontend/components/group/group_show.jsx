@@ -77,7 +77,7 @@ class GroupShow extends React.Component {
                     <div className='member2'>
                         <img src="https://image.flaticon.com/icons/png/128/149/149072.png"></img>
                         <p>Me</p>
-                    </div>
+                    </div>    
                 </div>
                 <div className='right-box'>
                             <div className='right-org'>
