@@ -1,0 +1,29 @@
+.update-all{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.update-banner{
+    font-size: 24px;
+    height: 150px;
+    background-color:#e2586a;
+    text-align: center;
+}
+
+.update-group-title {
+    position: relative;
+    top: 50px;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+.delete-trash {
+  max-width: 200px;
+  height: 60px;
+  position: relative;
+  top: 20px;
+  left: 60px;
+  padding: 0;
+  margin: 0;
+
+}

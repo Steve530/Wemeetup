@@ -5,12 +5,11 @@ Rails.application.routes.draw do
     resources :users, only: [:index, :update, :create, :show]
     resource :session, only: [:create, :destroy]
     resources :groups, only: [:update, :create, :show,:destroy,:index]
+    
+    resources :groups do
+      resources :memberships, only: [ :create ]
+      resource :memberships, only: [ :destroy ]
+    end
   end
-    # resources :groups, only: [:index, :update, :create, :show, :destroy] do
-    #   resource :group_user, only: [:create, :destroy]
-    # end
-    # resource :avatar, only: [:create]
-    # post 'groups/:id/image', to: 'groups#set_image'
-  
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

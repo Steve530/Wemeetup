@@ -7,14 +7,19 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6 }, allow_nil: true
   
     after_initialize :ensure_session_token
-  
-    has_many :reviews,
-      foreign_key: :author_id
+    
+    has_many :memberships
+
+    has_many :group_memberships,
+        through: :memberships,
+        source: :group
+
       
-    has_many :favorites
-    has_many :favorite_benches,
-      through: :favorites,
-      source: :bench
+    has_many :groups,
+    foreign_key: :organizer_id,
+    primary_key: :id,
+    class_name: 'Group'
+    
   
     def self.find_by_credentials(username, password)
       user = User.find_by(username: username)

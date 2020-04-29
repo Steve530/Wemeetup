@@ -17,11 +17,14 @@ class CreateGroup extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const group = Object.assign({}, this.state);
-    this.props.createGroup(group).then( (group) => this.props.history.push(`groups/`)
-    )};
+    if (this.state.group_name.length >=31) alert('Group name less than 30 chars pls :)')
+    else {const group = Object.assign({}, this.state);
+      this.props.createGroup(group).then( (group) => this.props.history.push(`groups/${group.id}`)
+    )}
+  };
 
   update (field) {
+    // if
     return (e) => {
       this.setState({
         [field]: e.target.value
@@ -39,8 +42,8 @@ class CreateGroup extends React.Component {
           <span className="group-span">make it happen</span>
         </div>
 
-      <div className="create-group-section">
-      <form className="create-form" onSubmit={this.handleSubmit}>
+        <div className="create-group-section">
+        <form className="create-form" onSubmit={this.handleSubmit}>
 
 
             <div className='create-group-inputs-container'>
@@ -91,8 +94,8 @@ class CreateGroup extends React.Component {
           <p className="create-disclaimer">We review all MeetSups based on our Community Guidelines</p>
           <input className="create-submit-button" type="submit" value="Agree & Continue"/>
         
-      </form>
-      </div>
+         </form>
+         </div>
       </div>
     )
   }

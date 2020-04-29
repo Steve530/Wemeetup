@@ -7,7 +7,16 @@ import {createGroup} from '../../actions/group_actions';
 const mstp = (state) => {
   // debugger
   
-  // return group: state.groups
+  const group = {
+    group_name: '',
+    description: ''
+};
+
+return {
+    group,
+    // currentUser: state.session.currentUser
+ 
+};
 };
 
 const mdtp = (dispatch) => {

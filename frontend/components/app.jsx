@@ -12,6 +12,7 @@ import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import CreateGroupContainer from './group/create_group_container';
 import GroupIndexContainer from './group/group_index_container';
+import EditGroupFormContainer from './group/edit_group_form_container';
 import GroupShowContainer from './group/group_show_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -29,7 +30,8 @@ const App = () => (
 
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      <AuthRoute exact path="/newgroup" component={CreateGroupContainer} />
+      <ProtectedRoute exact path="/newgroup" component={CreateGroupContainer} />
+      <ProtectedRoute path="/groups/:groupId/manage" component={EditGroupFormContainer} />
       <Route exact path="/groups/:groupId" component={GroupShowContainer} />
       <AuthRoute exact path="/groups" component={GroupIndexContainer} />
       <Route exact path="/" component={Splash} />

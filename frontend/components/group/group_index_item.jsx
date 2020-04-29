@@ -4,7 +4,6 @@ import {withRouter} from 'react-router-dom';
 class GroupIndexItem extends React.Component {
 
   constructor(props) {
-    // debugger
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
@@ -15,8 +14,7 @@ class GroupIndexItem extends React.Component {
    
   render() {
     // const urls = `url(./pics/${}.jpg)`
-      let picnum;
-      let idd = this.props.group.id % 27;
+      let idd = this.props.group.id % 31;
      
     return (
       // <li style={{backgroundImage: `urls()`}} onClick={this.handleClick}>
