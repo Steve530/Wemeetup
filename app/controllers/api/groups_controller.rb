@@ -42,7 +42,7 @@ class Api::GroupsController < ApplicationController
 
 
     def group_params
-        params.require(:group).permit(:group_name,:description,:organizer,:picture_url) #:description,
+        params.require(:group).permit(:group_name,:description,:organizer_id,:picture_url) #:description,
     end
 
 end
