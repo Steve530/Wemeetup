@@ -48,7 +48,7 @@ class GroupShow extends React.Component {
         } else {
             showjoin = <Link className="link-join" onClick={this.leaveGroup}>Leave Group</Link>
         }
-        
+        debugger
         if (!this.props.currentUser_id) {
             showmanage = "nomanage"
         } else if (this.props.currentUser_id === this.props.group.organizer.id) {
@@ -69,7 +69,10 @@ class GroupShow extends React.Component {
                     <p>{this.props.group.description}</p>
                 </div>
                 <div className='members_container'>
+                     <div className='show-members'>{this.props.group.membersarray} Member</div>
                     <h2>Members (2)</h2>
+                    <div className={showmanage}> <Link className="link-join22" to={`/groups/${this.props.group.id}/manage`}>Manage Group</Link></div>
+
                     <div className='member1'>
                         <img src="https://image.flaticon.com/icons/png/128/149/149072.png"></img>
                         <p>You</p>

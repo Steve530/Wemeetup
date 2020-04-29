@@ -27,10 +27,16 @@
     -webkit-font-smoothing: antialiased;
     color: white;
 }
+.show-members{
+    background-color: red;
+}
+.nomanage{
+    display: none;
+}
 .join_group_btn{
     width: 100px;
     height: 35px;
-    background-color: #e81035;
+    background-color: #e81035; 
     font-weight: 700;
     padding: 3px;
     // padding-right: 6px;
