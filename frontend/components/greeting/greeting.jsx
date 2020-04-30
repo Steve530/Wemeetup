@@ -8,8 +8,8 @@ const Greeting = ({ currentUser, logout,ownprops }) => {
     <div className="hero"> 
       <div className="login-signup">  
         {/* <Link to="/newgroup" className="toggle_group">Create a group</Link> */}
-        <Link to="/login" className="toggle_btn">Log in</Link>
-        <Link to="/signup" className="toggle_btn" >Sign up</Link>
+        <Link to="/login" className="toggle_btnin">Log in</Link>
+        <Link to="/signup" className="toggle_btnup" >Sign up</Link>
      
       {/* <img src="https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2020/01/lord_of_the_rings_gollum.jpg?itok=-ndMZJ1B" alt=""/> */}
       </div>

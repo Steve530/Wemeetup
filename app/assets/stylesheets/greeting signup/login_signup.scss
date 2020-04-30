@@ -18,18 +18,47 @@
  top: 30px;
  text-decoration: none;
 }
- .toggle_btn{
+ .toggle_btnup{
 text-decoration: none;
 margin-right: 20px;
-font-size: large;
+font-size: 15px;
+position: absolute;
+right: 15px;
+} 
+ .toggle_btnup:hover{
+text-decoration: none;
+margin-right: 20px;
+font-size: 15px;
+position: absolute;
+right: 15px;
+color: #00a2c7;
+
+} 
+ .toggle_btnin:hover{
+text-decoration: none;
+margin-right: 20px;
+font-size: 15px;
+position: absolute;
+right: 80px;
+color: #00a2c7;
+
+} 
+ .toggle_btnin{
+text-decoration: none;
+margin-right: 20px;
+font-size: 15px;
+position: absolute;
+right: 80px;
 } 
  #toggle_group{
 text-decoration: none;
 margin-right: 42px;
-font-size: larger;
+font-size: 18px;
+font-weight: bolder;
 color: #00a2c7;
 position: absolute;
-right: 100px;
+top: 25px;
+right: 140px;
 } 
 .header-group {
     display: block;

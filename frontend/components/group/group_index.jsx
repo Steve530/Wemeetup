@@ -13,7 +13,8 @@ class GroupIndex extends React.Component {
   return(
     <div className='groupandpics'>
 
-      <h2 id='groupsttt'>Groups</h2>
+      <h2 id='groupsttt'>Groups near you</h2>
+      <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4>
       <div className='jimmy_group_pic'>
 
         { this.props.groups.map(group=> <GroupIndexItem key = {group.id} group={group}/>)}

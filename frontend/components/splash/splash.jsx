@@ -28,7 +28,7 @@ const Splash = () => {
                 className="splash-section-button"
                 onClick={()=>props.history.push('/signup')}
                 >
-                <span>Sign Up</span>
+                
               </div> */}
             </section>
       </main>
