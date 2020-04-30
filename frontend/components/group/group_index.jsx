@@ -1,5 +1,6 @@
 import React from 'react';
 import GroupIndexItem from '../group/group_index_item';
+import { Link } from "react-router-dom";
 
 class GroupIndex extends React.Component {
 
@@ -14,7 +15,7 @@ class GroupIndex extends React.Component {
 
       <h2 id='groupsttt'>Groups</h2>
       <div className='jimmy_group_pic'>
-        
+
         { this.props.groups.map(group=> <GroupIndexItem key = {group.id} group={group}/>)}
       </div>
     </div>

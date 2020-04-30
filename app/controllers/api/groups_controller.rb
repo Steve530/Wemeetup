@@ -24,9 +24,7 @@ class Api::GroupsController < ApplicationController
     end
     
     def update
-        debugger
         @group = Group.find(params[:id])
-        debugger
         if @group.update(group_params) && (@group.organizer.id === current_user.id) 
             render :show 
         else
@@ -39,7 +37,6 @@ class Api::GroupsController < ApplicationController
      @group = Group.find(params[:id])
       @group.delete
     end
-
 
     def group_params
         params.require(:group).permit(:group_name,:description,:organizer_id,:picture_url) #:description,

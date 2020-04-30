@@ -23,11 +23,13 @@ text-decoration: none;
 margin-right: 20px;
 font-size: large;
 } 
- .toggle_group{
+ #toggle_group{
 text-decoration: none;
 margin-right: 42px;
 font-size: larger;
 color: #00a2c7;
+position: absolute;
+right: 100px;
 } 
 .header-group {
     display: block;

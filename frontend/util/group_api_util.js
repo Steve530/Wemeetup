@@ -22,13 +22,13 @@ export const createGroup = (group) => {
 };
 
 export const updateGroup = (group) => {
-  debugger
+   
   return $.ajax({
     method: "patch",
-    url: `api/groups/${group.get('group[id]')}/edit`,
-    data: {group},
-    contentType: false,
-    processData: false
+    url: `api/groups/${group.id}`,
+    data: {group}
+    // contentType: false,
+    // processData: false
   })
 };
 

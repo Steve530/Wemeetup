@@ -7,7 +7,7 @@ const Greeting = ({ currentUser, logout,ownprops }) => {
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
-        <Link to="/newgroup" className="toggle_group">Create a group</Link>
+        {/* <Link to="/newgroup" className="toggle_group">Create a group</Link> */}
         <Link to="/login" className="toggle_btn">Log in</Link>
         <Link to="/signup" className="toggle_btn" >Sign up</Link>
      
