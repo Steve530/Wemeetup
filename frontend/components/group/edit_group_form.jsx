@@ -30,12 +30,12 @@ componentDidUpdate(prevProps) {
 
 handleSubmit(e) {
     e.preventDefault();
-     let newgroup = {
-        id: this.state.id,
-        group_name: this.state.group_name,
-        description: this.state.description,
-        organizer_id: this.state.organizer_id
-    }
+        let newgroup = {
+            id: this.state.id,
+            group_name: this.state.group_name,
+            description: this.state.description,
+            organizer_id: this.state.organizer_id
+        }
     this.props.action(newgroup).then(() => this.props.history.push(`/groups/${newgroup.id}`));
 
 }
