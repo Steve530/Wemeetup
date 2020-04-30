@@ -7,7 +7,7 @@ const msp = (state, ownProps) => {
     const defaultGroup = {
         group_name: '',
         description: '',
-        organzer_id: 2
+        organzer_id: 2,
     };
 
     const group = state.entities.groups[ownProps.match.params.groupId] || defaultGroup;
