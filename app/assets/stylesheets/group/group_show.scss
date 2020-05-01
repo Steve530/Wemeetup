@@ -27,25 +27,9 @@
     -webkit-font-smoothing: antialiased;
     color: white;
 }
-.show-members{
-    background-color: red;
-}
+
 .nomanage{
     display: none;
-}
-.join_group_btn{
-    width: 100px;
-    height: 35px;
-    background-color: #e81035; 
-    font-weight: 700;
-    padding: 3px;
-    // padding-right: 6px;
-    // padding-left: 6px;
-    border-radius: 5px;
-    margin-left: 335px;
-    margin-top: 5px;
-    // justify-content: flex-start;
-
 }
 .aboutgroup {
     width: 400px;
@@ -54,7 +38,7 @@
     margin-top: 5px;
     border: 2px;
     background-color: blue($color: #000000);
-
+    
 }
 .aboutgroup p{
     background-color: blue($color: #000000);
@@ -66,48 +50,100 @@
     padding-bottom: 40px;
 }
 
-.members_container{
+.right-members{
     position: absolute;
     right: 90px;
     top: 500px;
 }
-.member1  {
-    position: absolute;
-    margin-top: 6px;
 
-    right:70px;
-     
-}
-.member2  {
-
-    position: absolute;
-    margin-top: 8px;
-    right:-7px;
-     
-}
-.member1 img{
-    height: 60px;
-    width: 60px;
-    // position: absolute;
-    // right: 30px
-
-}
-.member2 img{
-    height: 60px;
-    width: 60px;
-    // position: absolute;
-    // right: 100px;
-
-}
-.member1 p {
-    position: absolute;
-    margin-top: 2px;
-    right:17px;
-     
-}
+// .member1 p {
+//     position: absolute;
+//     margin-top: 2px;
+//     right:17px;
+    
+// }
 .member2 p {
     position: absolute;
     margin-top: 2px;
     right:17px;
-     
+}
+.show-city{
+    position: absolute;
+    left: 580px;
+    font-size: 14px;
+    font-weight: 600;
+    top: 200px;
+}
+.icon1map{
+    position: absolute;
+    left: 550px;
+    top: 200px;
+}
+.icon2member{
+    position: absolute;
+    left: 550px;
+    top: 240px;
+}
+.icon3organizer{
+    position: absolute;
+    left: 550px;
+    top: 280px;
+}
+#organizedby{
+    position: absolute;
+    left: 580px;
+    top: 280px;
+}
+#organizer-name{
+    position: absolute;
+    left: 720px;
+    top: 282px;
+    color: rgb(39, 148, 112);
+    font-size: 18px;
+    font-weight: 600;
+}
+.show-members{
+    position: absolute;
+    left: 580px;
+    top: 240px; 
+}
+.link-join22{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+}
+.manage{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    background-color: #e81035; 
+    font-weight: 700;
+    padding: 3px;
+    border-radius: 5px;
+    left: 680px;
+    top: 444px;
+ 
+}
+.join_group_btn{
+    width: 90px;
+    height: 40px;
+    position: absolute;
+
+    background-color: #e81035; 
+    font-weight: 700;
+    padding: 3px;
+    // padding-right: 6px;
+    // padding-left: 6px;
+    border-radius: 5px;
+    margin-left: 335px;
+    margin-top: 5px;
+    left: 220px;
+    top: 440px;
+}
+.avatar{
+    height: 60px;
+    width: 60px;
 }

@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { fetchGroup } from "../../actions/group_actions";
+import { Icon, InlineIcon } from '@iconify/react';
+import mapzenIcon from '@iconify/icons-logos/mapzen';
+import saguiIcon from '@iconify/icons-logos/sagui';
+import mithrilIcon from '@iconify/icons-logos/mithril';
+
 class GroupShow extends React.Component {
     constructor(props) {
       super(props);
@@ -37,7 +42,7 @@ class GroupShow extends React.Component {
         let showjoin;
         let showmanage;
         let avatar;
-        const memberAvatars = this.props.group.members.map((avatar, idx) => <li key={idx}><img src="https://meetbrite-seeds.s3.amazonaws.com/avatar.png" className='avatar' /></li>);
+        const memberAvatars = this.props.group.members.map((avatar, idx) => <li key={idx}><img src="https://image.flaticon.com/icons/png/128/149/149072.png" className='avatar' /></li>);
         // debugger
         if (Object.values(this.props.group).length === 0) { return null; }
         else if (!this.props.currentUser_id) {
@@ -48,51 +53,50 @@ class GroupShow extends React.Component {
         } else {
             showjoin = <Link className="link-join" onClick={this.leaveGroup}>Leave Group</Link>
         }
-        debugger
+        
         if (!this.props.currentUser_id) {
             showmanage = "nomanage"
         } else if (this.props.currentUser_id === this.props.group.organizer.id) {
             showmanage = "manage"
-            avatar = <img src="https://meetbrite-seeds.s3.amazonaws.com/avatar.png" className="avatar" />
         } else {
             showmanage = "nomanage"
         }
         return(
             <div>
                 <p id='group_page_name'>{this.props.group.group_name}</p>
+                <div>
+                    <div className='icon1map'><Icon icon={mapzenIcon} /></div>
+                    <label className="show-city">San Francisco, SF</label>
+                   
+                    <div className='icon2member'><Icon icon={mithrilIcon} /></div>
+                    <div className='show-members'>Member ( {this.props.group.membersarray} ) </div>
+                   
+                    <div className='icon3organizer'><Icon icon={saguiIcon} /></div>
+                    <div className='right-org'>
+                                <h3 id='organizedby'>Organized By:</h3>
+                                <div>
+                                    <div id='organizer-name'>{this.props.group.organizer.username}</div>
+                                </div>
+                            </div>
+
+                    <button className={showmanage}> <Link className="link-join22" to={`/groups/${this.props.group.id}/manage`}>Manage Group</Link></button>
+                    <button className='join_group_btn'>{showjoin}</button>
+
+                </div>
                 <div className="group-showpage">
                     <img src={`./${idd}.jpg`} />
                 </div>
-                <button className='join_group_btn'>{showjoin}</button>
+                
                 <h2 id='whatweabout'>What we're about</h2>
                 <div className='aboutgroup'>
                     <p>{this.props.group.description}</p>
                 </div>
-                <div className='members_container'>
-                     <div className='show-members'>{this.props.group.membersarray} Member</div>
-                    <h2>Members (2)</h2>
-                    <div className={showmanage}> <Link className="link-join22" to={`/groups/${this.props.group.id}/manage`}>Manage Group</Link></div>
-
-                    <div className='member1'>
-                        <img src="https://image.flaticon.com/icons/png/128/149/149072.png"></img>
-                        <p>You</p>
-                    </div>
-                    <div className='member2'>
-                        <img src="https://image.flaticon.com/icons/png/128/149/149072.png"></img>
-                        <p>Me</p>
-                    </div>    
-                </div>
+               
                 <div className='right-box'>
-                            <div className='right-org'>
-                                <h3>Organized By</h3>
-                                <div>
-                                    {/* <div>{avatar}</div> */}
-                                    <div>{this.props.group.organizer.username}</div>
-                                </div>
-                            </div>
+                            
                             <div className='right-members'>
                                 <h3>Members</h3>
-                                <div>
+                                <div className='memberAvatars'>
                                     <ul>{memberAvatars}</ul>
                                 </div>
                             </div>

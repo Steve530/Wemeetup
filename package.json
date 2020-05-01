@@ -34,5 +34,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@iconify/icons-logos": "^1.0.11",
+    "@iconify/react": "^1.1.3"
+  }
 }

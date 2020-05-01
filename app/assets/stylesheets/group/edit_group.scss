@@ -4,15 +4,32 @@
 }
 
 .update-banner{
+    position: relative;
     font-size: 24px;
+    width: 85%;
+    justify-content: center;
     height: 150px;
     background-color:#e2586a;
     text-align: center;
+    top: 60px;
+    margin-left: 90px;
 }
-
-.update-group-title {  
+.createform{
     position: relative;
-    top: 50px;
+    top: 100px;
+    left: 280px;
+}
+.create-2{
+    position: absolute;
+    margin-top: 30px;
+}
+.text1{
+    width: 65%;
+    height: 110px;
+}
+.update-group-title {  
+    position: absolute;
+    top: 90px;
     color: #fafafa;
     font-weight: bold;
 }
