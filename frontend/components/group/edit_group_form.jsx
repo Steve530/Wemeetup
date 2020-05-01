@@ -84,7 +84,7 @@ render() {
                 <div className="create-2">
                     <h6 className="create-step"></h6>
                     <h1>Edit what your group is about</h1>
-                    <h4 className="italics">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4>
+                    <h4 className="italics2">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4>
                     <textarea className='text1' onChange={this.update('description')} value={this.state.description} />
                     <div className="submit-div">
                         <input type="submit" className="create-submit" value="Update your group!" />
