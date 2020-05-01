@@ -42,7 +42,7 @@ class GroupShow extends React.Component {
         let showjoin;
         let showmanage;
         let avatar;
-        const memberAvatars = this.props.group.members.map((avatar, idx) => <li key={idx}><img src="https://image.flaticon.com/icons/png/128/149/149072.png" className='avatar' /></li>);
+        const memberAvatars = this.props.group.members_names.map((name, idx) => <li key={idx}><img src="https://image.flaticon.com/icons/png/128/149/149072.png" className='avatar' /><p>{name}</p></li>);
         // debugger
         if (Object.values(this.props.group).length === 0) { return null; }
         else if (!this.props.currentUser_id) {
@@ -97,7 +97,8 @@ class GroupShow extends React.Component {
                             <div className='right-members'>
                                 <h3>Members</h3>
                                 <div className='memberAvatars'>
-                                    <ul>{memberAvatars}</ul>
+                                        <ul>{memberAvatars}</ul>
+
                                 </div>
                             </div>
                 </div>
