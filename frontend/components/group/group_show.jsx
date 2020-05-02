@@ -95,7 +95,7 @@ class GroupShow extends React.Component {
                 <div className='right-box'>
                             
                             <div className='right-members'>
-                                <h3>Members</h3>
+                                <h1 id='memberfont'>Members</h1>
                                 <div className='memberAvatars'>
                                         <ul>{memberAvatars}</ul>
 

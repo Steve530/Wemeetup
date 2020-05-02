@@ -149,7 +149,18 @@
 }
 .right-members{
     position: absolute;
-    top: 600px;
+    top: 550px;
     right: 120px;
-    background-color: violet;
+}
+.memberAvatars{
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    right: 20px;
+}
+#memberfont{
+    position: absolute;
+    right: -12px;
+    color: rgb(32, 110, 110);
+    font-size: 27px;
 }
