@@ -6,32 +6,43 @@
 .update-banner{
     position: relative;
     font-size: 24px;
-    width: 85%;
-    justify-content: center;
-    height: 150px;
+    // width: 99%;
+    height: 100px;
     background-color:#e2586a;
     text-align: center;
     top: 60px;
-    margin-left: 90px;
+    // margin-left: 90px;
 }
 .createform{
     position: relative;
     top: 100px;
-    left: 280px;
+    left: 10px;
+    margin-bottom: 40px;
+
 }
 .create-2{
     position: absolute;
     margin-top: 30px;
 }
+.input-2{
+    margin-top: 15px;
+
+}
 .text1{
+    margin-top: 15px;
+    margin-left: 9px;
     width: 65%;
     height: 110px;
+    font-size: 20px;
 }
 .update-group-title {  
     position: absolute;
-    top: 90px;
+    top: 20px;
     color: #fafafa;
     font-weight: bold;
+    margin-left: 15px;
+
+
 }
 
 .delete-trash {
@@ -40,6 +51,13 @@
   position: relative;
   top: 20px;
   left: 60px;
-
-
+    background-color: rgb(182, 79, 207);
+}
+.submit-div{
+    margin-bottom: 40px;
+}
+.create-submit{
+    background-color: yellowgreen;
+    font-size: 20px;
+    font: bolder;
 }
