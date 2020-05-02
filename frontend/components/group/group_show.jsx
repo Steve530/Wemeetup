@@ -49,9 +49,9 @@ class GroupShow extends React.Component {
             showjoin = <Link className="link-join" to="/login">Join Group</Link>
         } 
         else if ((this.props.currentUser_id) && (!this.props.group.members.includes(this.props.currentUser_id))) {
-            showjoin = <Link className="link-join" onClick={this.joinGroup}>Join Group</Link>
+            showjoin = <Link className="link-join" to="" onClick={this.joinGroup}>Join Group</Link>
         } else {
-            showjoin = <Link className="link-join" onClick={this.leaveGroup}>Leave Group</Link>
+            showjoin = <Link className="link-join"  to=""  onClick={this.leaveGroup}>Leave Group</Link>
         }
         
         if (!this.props.currentUser_id) {

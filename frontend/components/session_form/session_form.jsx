@@ -57,7 +57,7 @@ class SessionForm extends React.Component {
             <h1>{this.props.formType}
             <img className="icon" src="https://secure.meetupstatic.com/s/img/09300654065624139187/icon/icon_padlock.gif" alt="[lock icon]"></img>
             </h1> 
-            <a id='Registered-with-us-yet'>Registered with us yet?{this.props.navLink} </a>
+            <div id='Registered-with-us-yet'>Registered with us yet?{this.props.navLink} </div>
            
           </div>
           {this.renderErrors()}

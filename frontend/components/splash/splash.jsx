@@ -24,12 +24,6 @@ const Splash = () => {
             <section className="splash-section">
               <h1>What do you love?</h1>
               <h3>Do more of it with Meetups</h3>
-              {/* <div
-                className="splash-section-button"
-                onClick={()=>props.history.push('/signup')}
-                >
-                
-              </div> */}
             </section>
       </main>
       <div>
