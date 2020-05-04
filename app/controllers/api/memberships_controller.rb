@@ -18,7 +18,7 @@ class Api::MembershipsController < ApplicationController
   
       @group = Group.find(params[:group_id])
       membership.delete
-      
+        
       render "api/groups/show", group: @group
     end 
   end 
