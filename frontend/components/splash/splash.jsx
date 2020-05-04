@@ -1,9 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-// eslint-disable-next-line max-len
 import GroupIndexContainer from '../group/group_index_container';
 
-const Splash = () => {
+const Splash = () => { 
   return (
     <div>
 
