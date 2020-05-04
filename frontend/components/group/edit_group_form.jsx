@@ -90,6 +90,7 @@ render() {
                         <input type="submit" className="create-submit" value="Update your group!" />
                         <img className="delete-trash" onClick={this.handleDelete} src="https://meetbrite-seeds.s3.amazonaws.com/delete.png" />
                     </div>
+                    
                 </div>
             </form>
 
