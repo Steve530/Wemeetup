@@ -10,12 +10,12 @@ const mstp = (state) => {
   const group = {
     group_name: '',
     description: ''
-};
+}; 
 
 return {
     group,
     // currentUser: state.session.currentUser
- 
+  
 };
 };
 
