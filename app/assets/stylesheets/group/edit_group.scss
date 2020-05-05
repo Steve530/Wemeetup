@@ -6,12 +6,10 @@
 .update-banner{
     position: relative;
     font-size: 24px;
-    // width: 99%;
     height: 100px;
     background-color:#e2586a;
     text-align: center;
     top: 60px;
-    // margin-left: 90px;
 }
 .createform{
     position: relative;
@@ -50,10 +48,11 @@
     font: bolder;  
     width: 150px;
     height: 35px;
-  position: relative;
-  top: 10px;
-  left: 60px;
-  background-color: crimson;
+    position: relative;
+    top: 10px;
+    left: 60px;
+    background-color: crimson;
+    cursor: pointer;
 }
 .create-submit{
     margin-left: 60px;
@@ -63,6 +62,8 @@
     position: relative;
     font: bolder;  
     width: 150px;
+    cursor: pointer;
+
 }
 // .delete-trash {
 //   width: 35px;

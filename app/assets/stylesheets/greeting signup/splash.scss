@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .splash-video {
@@ -39,30 +39,19 @@
   position: relative;
   top: 38px;
 }
-
+.header-button{
+  background-color: cyan;
+  width: 58px;
+  height: 24px;
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .splash-section h3 {
   margin: 12px;
-}
-// .splash-section-button {
-//   background-color: $wemeet-light-red;
-//   margin-top: 36px;
-//   width: 284.234px;
-//   height: 49px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   cursor: pointer;
-//   border-radius: 5px;
-//   font-size: 16px;
-//   padding: 12px;
-//   box-sizing: border-box;
-// }
-
-// .splash-section-button:hover {
-//   background: $wemeet-red;
-//   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-// }
-
+} 
 .splash-section > h1 {
   font-size: 42px;
 }
