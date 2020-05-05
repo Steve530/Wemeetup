@@ -13,7 +13,6 @@ export const fetchGroup = (id) => {
 };
 
 export const createGroup = (group) => {
-  // debugger
   return $.ajax({
     method: 'post',
     url: `/api/groups`,
@@ -27,8 +26,6 @@ export const updateGroup = (group) => {
     method: "patch",
     url: `api/groups/${group.id}`,
     data: {group}
-    // contentType: false,
-    // processData: false
   })
 };
 
