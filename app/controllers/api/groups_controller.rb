@@ -6,7 +6,6 @@ class Api::GroupsController < ApplicationController
   end
   
     def create
-        # debugger
         @group = Group.new(group_params)
         @group.organizer_id = current_user.id
 

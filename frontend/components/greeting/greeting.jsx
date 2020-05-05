@@ -7,7 +7,6 @@ const Greeting = ({ currentUser, logout,ownprops }) => {
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
-        {/* <Link to="/newgroup" className="toggle_group">Create a group</Link> */}
         <Link to="/login" className="toggle_btnin">Log in</Link>
         <Link to="/signup" className="toggle_btnup" >Sign up</Link>
       </div>

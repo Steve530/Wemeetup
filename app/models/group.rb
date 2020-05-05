@@ -1,7 +1,6 @@
 class Group < ApplicationRecord
     validates :group_name, length: { minimum: 3 }
     validates  :description, presence: true
-    # validates :organizer_id
 
 
     belongs_to :organizer,

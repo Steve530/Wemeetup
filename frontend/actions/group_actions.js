@@ -13,11 +13,9 @@ const receiveAllGroups = (groups) => {
 }
 
 const receiveGroup = (payload) => {
-  // debugger 
   return {
     type: RECEIVE_GROUP,
     payload
-    // events,
   }
 }
 
@@ -29,7 +27,6 @@ const removeGroup = (groupId) => {
 }
 
 export const fetchGroups = () => {
-  // debugger
   return (dispatch) => {
     return GroupApiUtil.fetchGroups().then( groups => {
       return dispatch(receiveAllGroups(groups))
@@ -38,7 +35,6 @@ export const fetchGroups = () => {
 };
 
 export const fetchGroup = (id) => {
-  // debugger
   return (dispatch) => {
     return GroupApiUtil.fetchGroup(id).then( group => {
       return dispatch(receiveGroup(group))
@@ -47,7 +43,6 @@ export const fetchGroup = (id) => {
 };
 
 export const createGroup = (group) => dispatch => {
-  // debugger
  return GroupApiUtil.createGroup(group).then(group => {
     dispatch(receiveGroup(group));
     return group;

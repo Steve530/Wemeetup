@@ -19,10 +19,6 @@ export const receiveErrors = errors => ({
   type: RECEIVE_SESSION_ERRORS,
   errors
 });
-// export const clearSessionErrors2 = errors => ({
-//   type: CLEAR_SESSION_ERRORS,
-//   errors
-// });
 
 
 
@@ -52,8 +48,3 @@ export const clearSessionErrors = () => {
     return dispatch({ type: CLEAR_SESSION_ERRORS });
   };
 };
-// export const clearUserErrors = () => {
-//   return dispatch => {
-//     return dispatch({ type: CLEAR_USER_ERRORS });
-//   };
-// };
