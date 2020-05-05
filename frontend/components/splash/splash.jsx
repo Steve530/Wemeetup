@@ -5,7 +5,6 @@ import GroupIndexContainer from '../group/group_index_container';
 const Splash = () => { 
   return (
     <div>
-
       <main className="splash">
         <video
           autoPlay
