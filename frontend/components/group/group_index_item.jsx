@@ -13,11 +13,9 @@ class GroupIndexItem extends React.Component {
   }
    
   render() {
-    // const urls = `url(./pics/${}.jpg)`
       let idd = this.props.group.id % 31;
      
     return (
-      // <li style={{backgroundImage: `urls()`}} onClick={this.handleClick}>
     
       <div className="group-index-item"  onClick={this.handleClick}>
         <div className="group-info">
@@ -27,9 +25,7 @@ class GroupIndexItem extends React.Component {
           </div>
         </div>
       </div>
-      
-      // </li>
-    )
+          )
   }
 }
 

@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 class CreateGroup extends React.Component {
 
   constructor(props) {
-    // debugger
     super(props);
     this.state = {
       group_name: "",
@@ -24,7 +23,6 @@ class CreateGroup extends React.Component {
   };
 
   update (field) {
-    // if
     return (e) => {
       this.setState({
         [field]: e.target.value
@@ -47,12 +45,6 @@ class CreateGroup extends React.Component {
 
 
             <div className='create-group-inputs-container'>
-
-
-            {/* <div className="create-group-input">
-            <img className="create-icon" src="https://secure.meetupstatic.com/s/img/5771697722992842330638/start_v2/globe.svg"/>
-               
-            </div> */}
 
                 <div className="create-group-input">
                 <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
