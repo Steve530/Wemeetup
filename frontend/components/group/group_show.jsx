@@ -13,15 +13,8 @@ class GroupShow extends React.Component {
       this.leaveGroup = this.leaveGroup.bind(this);
     }
     componentDidMount(){
-        // window.scrollTo(20, 20);
         this.props.fetchGroup(this.props.ownProps.match.params.groupId)
     }
-
-    // componentDidUpdate(prevProps) {
-    //     if (prevProps.group.id != this.props.group.id) {
-    //         this.props.fetchGroup(this.props.match.params.groupId);
-    //     }
-    // }
 
     joinGroup(e) {
         e.preventDefault();
@@ -43,7 +36,6 @@ class GroupShow extends React.Component {
         let showmanage;
         let avatar;
         const memberAvatars = this.props.group.members_names.map((name, idx) => <li key={idx}><img src="https://image.flaticon.com/icons/png/128/149/149072.png" className='avatar' /><p>{name}</p></li>);
-        // debugger
         if (Object.values(this.props.group).length === 0) { return null; }
         else if (!this.props.currentUser_id) {
             showjoin = <Link className="link-join" to="/login">Join Group</Link>

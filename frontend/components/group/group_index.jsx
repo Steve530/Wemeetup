@@ -9,7 +9,6 @@ class GroupIndex extends React.Component {
  }
 
  render() {
-  //  debugger
   return(
     <div className='groupandpics'>
 
