@@ -68,7 +68,7 @@ class SessionForm extends React.Component {
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-                className="login-input"
+                className="login-input"  
               />
             </label>
             <br/>
