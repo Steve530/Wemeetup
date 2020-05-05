@@ -45,19 +45,40 @@
 
 }
 
-.delete-trash {
-  max-width: 200px;
-  height: 60px;
-  position: relative;
-  top: 20px;
-  left: 60px;
-    background-color: rgb(182, 79, 207);
-}
-.submit-div{
-    margin-bottom: 40px;
-}
-.create-submit{
-    background-color: yellowgreen;
+.deletebtn {
     font-size: 20px;
     font: bolder;  
+    width: 150px;
+    height: 35px;
+  position: relative;
+  top: 10px;
+  left: 60px;
+  background-color: crimson;
+}
+.create-submit{
+    margin-left: 60px;
+    background-color: yellowgreen;
+    top: 10px;
+    font-size: 20px;
+    position: relative;
+    font: bolder;  
+    width: 150px;
+}
+// .delete-trash {
+//   width: 35px;
+//   height: 35px;
+//   position: relative;
+//   top: 10px;
+//   left: 60px;
+// }
+
+// .create-submit{
+//     background-color: yellowgreen;
+//     font-size: 20px;
+//     font: bolder;  
+//     width: 340px;
+// }
+
+.submit-div{
+    margin-bottom: 40px;
 }

@@ -87,8 +87,9 @@ render() {
                     <h4 className="italics2">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4>
                     <textarea className='text1' onChange={this.update('description')} value={this.state.description} />
                     <div className="submit-div">
-                        <input type="submit" className="create-submit" value="Update your group!" />
-                        <img className="delete-trash" onClick={this.handleDelete} src="https://meetbrite-seeds.s3.amazonaws.com/delete.png" />
+                        <input type="submit" className="create-submit" value="Update group" />
+                        {/* <img className="delete-trash" onClick={this.handleDelete} src="https://meetbrite-seeds.s3.amazonaws.com/delete.png" /> */}
+                        <button className="deletebtn" onClick={this.handleDelete}>Delete group</button>
                     </div>
                     
                 </div>
