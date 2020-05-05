@@ -22,5 +22,4 @@ const Greeting = ({ currentUser, logout,ownprops }) => {
   return currentUser ? personalGreeting() : sessionLinks();
 };
 
-
 export default Greeting;
