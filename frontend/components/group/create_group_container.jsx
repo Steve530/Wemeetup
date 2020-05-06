@@ -11,7 +11,7 @@ const mstp = (state) => {
       group_name: '',
       description: ''
     }; 
-
+   
   return {
       group,  
   };
