@@ -7,7 +7,6 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
-// Is  Hersha hired again  ? 
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import CreateGroupContainer from './group/create_group_container';
@@ -16,7 +15,7 @@ import EditGroupFormContainer from './group/edit_group_form_container';
 import GroupShowContainer from './group/group_show_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-
+//steve
 import Splash from './splash/splash';
 const App = () => (
   <div>
