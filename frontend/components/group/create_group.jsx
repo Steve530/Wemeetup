@@ -9,7 +9,7 @@ class CreateGroup extends React.Component {
     this.state = {
       group_name: "",
       description: "",
-     
+         
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
