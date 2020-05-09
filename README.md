@@ -3,6 +3,7 @@
 Wemeetup is a web-app clone of http://www.meetup.com, a platform for users to discover, join, and create groups based on specific interests and hobbies.
 
 <a href="https://myhobbits.herokuapp.com/#/" target="_blank">Link to my site!</a>
+ <img src= "https://raw.githubusercontent.com/Steve530/Wemeetup/master/public/41.png"/> 
 ## Technologies Used
 Wemeetup is developed with a Ruby on Rails backend, a PostgreSQL database and is hosted on Heroku. The backend provides RESTful API's and responds with JSON data. The front end is modeled with React and Redux and implements styling from CSS.
 
