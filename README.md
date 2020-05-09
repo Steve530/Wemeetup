@@ -4,19 +4,17 @@ Wemeetup is a web-app clone of http://www.meetup.com, a platform for users to di
 
 <a href="https://myhobbits.herokuapp.com/#/" target="_blank">Link to my site!</a>
 
- <img src= "https://raw.githubusercontent.com/Steve530/Wemeetup/master/public/52.png"/> 
+ <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/61.png"/> 
 
 ## Technologies Used
 Wemeetup is developed with a Ruby on Rails backend, a PostgreSQL database and is hosted on Heroku. The backend provides RESTful API's and responds with JSON data. The front end is modeled with React and Redux and implements styling from CSS.
 
 In addition, this website employed Jbuilder, NodeJs, JQuery to make AJAX requests, Node Package Manager (npm), webpack, React DOM, React Router, React History for browser history manipulation.
 
- <img src= "https://raw.githubusercontent.com/Steve530/Wemeetup/master/public/51.png"/> 
-
 ## Features
 Users can create an account and log in securely (with bcrypt) with custom error handling. Once logged in, the user will be able to create groups and edit group. If a user is trying to create a group without logging in,the page will be redirected to the log in page.
 
- <img src= "https://raw.githubusercontent.com/Steve530/Wemeetup/master/public/53.png"/> 
+ <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/show3.gif"/> 
 
 ## Code Snippets
 Utilization of protected and authenticated routes with React Router.  This allows the developer to dictate user access depending on their login state.
