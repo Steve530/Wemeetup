@@ -45,7 +45,7 @@ handleSubmit(e) {
 
 ```
 ## Installation on UNIX
-* 1.Follow the guide <a href="https://guides.rubygems.org/rubygems-basics/" target="_blank">here</a> to set up your ruby environment and install gem and bundler.
-* 2.Clone the repository. git clone https://github.com/Steve530/Wemeetup.git
-* 3.run npm install to install the dependencies for the app.
-* 4.run npm start to start webpack and create the bundle.js file.
+1. Follow the guide <a href="https://guides.rubygems.org/rubygems-basics/" target="_blank">here</a> to set up your ruby environment and install gem and bundler.
+2. Clone the repository. git clone https://github.com/Steve530/Wemeetup.git
+3. Run npm install to install the dependencies for the app.
+4. Run npm start to start webpack and create the bundle.js file.
