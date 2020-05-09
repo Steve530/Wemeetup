@@ -41,7 +41,7 @@ const App = () => (
 );
 ```
 
-Below displays how the developer can redirect users based on where they are on the webpage with the Redux history property.  In this example, the user is redirected to the group index page upon submission of a newly created group, thus allowing the user to see the new group they have created.
+Below displays how the developer can redirect users based on where they are on the webpage with the Redux history property.  In this example, the user is redirected to the group show page upon submission of a newly created group, thus allowing the user to see the new group they have created.
 
 ```
 handleSubmit(e) {
