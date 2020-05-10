@@ -5,7 +5,6 @@ import {createGroup} from '../../actions/group_actions';
 
 
 const mstp = (state) => {
-  // debugger
   
     const group = {
       group_name: '',
