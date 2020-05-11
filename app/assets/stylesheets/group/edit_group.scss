@@ -1,7 +1,7 @@
-.update-all{
-    background-color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
-}
+// .update-all{
+//     background-color: #fafafa;
+//     font-family: Arial, Helvetica, sans-serif;
+// }
 
 .update-banner{
     position: relative;
@@ -51,12 +51,12 @@
     position: relative;
     top: 10px;
     left: 60px;
-    background-color: crimson;
+    background-color:#e2586a;
     cursor: pointer;
 }
 .create-submit{
-    margin-left: 60px;
-    background-color: yellowgreen;
+    margin-left: 40px;
+    background-color:#e2586a;
     top: 10px;
     font-size: 20px;
     position: relative;
@@ -64,22 +64,7 @@
     width: 150px;
     cursor: pointer;
 
-}
-// .delete-trash {
-//   width: 35px;
-//   height: 35px;
-//   position: relative;
-//   top: 10px;
-//   left: 60px;
-// }
-
-// .create-submit{
-//     background-color: yellowgreen;
-//     font-size: 20px;
-//     font: bolder;  
-//     width: 340px;
-// }
-
+} 
 .submit-div{
     margin-bottom: 40px;
 }
