@@ -1,7 +1,7 @@
-// .update-all{
-//     background-color: #fafafa;
-//     font-family: Arial, Helvetica, sans-serif;
-// }
+.update-all{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .update-banner{
     position: relative;
@@ -55,16 +55,19 @@
     cursor: pointer;
 }
 .create-submit{
-    margin-left: 40px;
+    margin-left: 60px;
     background-color:#e2586a;
     top: 10px;
     font-size: 20px;
-    position: relative;   
+    position: relative;
     font: bolder;  
     width: 150px;
     cursor: pointer;
 
-} 
+}
+ 
+ 
+
 .submit-div{
     margin-bottom: 40px;
 }
