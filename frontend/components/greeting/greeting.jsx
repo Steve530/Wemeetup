@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { Icon, InlineIcon } from '@iconify/react';
+import chevronDown from '@iconify/icons-mdi/chevron-down';
+import accountCircleOutline from '@iconify/icons-mdi/account-circle-outline';
 
 // const Greeting = ({ this.props.currentUser, logout,ownprops }) => 
 
@@ -46,7 +48,8 @@ class Greeting extends React.Component {
         <button className="header-button" onClick={this.props.logout}>Log Out</button>
       </hgroup>
       <div className="dropdown">
-          <i className="far fa-user-circle" onClick={this.yesmenu}>iiiiii</i>
+          <div className=" "><Icon icon={accountCircleOutline} /></div>
+          <i className="dropdown-arrow" onClick={this.yesmenu}><Icon icon={chevronDown} /></i>
       </div>
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
