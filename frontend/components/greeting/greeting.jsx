@@ -2,8 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Greeting = ({ currentUser, logout,ownprops }) => {
-  
+// const Greeting = ({ this.props.currentUser, logout,ownprops }) => 
+
+class Greeting extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+          yesmenu: false,
+      };
+
+      this.yesmenu = this.yesmenu.bind(this);
+      this.nomenu = this.nomenu.bind(this);
+  }
+
+  yesmenu(e) {
+      e.preventDefault();
+
+      this.setState({
+          yesmenu: true,
+      }, () => {
+          document.addEventListener('click', this.nomenu);
+      });
+  }
+
+  nomenu() {
+      this.setState({ yesmenu: false }, () => {
+          document.removeEventListener('click', this.nomenu);
+      });
+  }
+  render() {
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
@@ -13,13 +40,27 @@ const Greeting = ({ currentUser, logout,ownprops }) => {
     </div>
   );
   const personalGreeting = () => (
-    <hgroup className="header-group">
-      <h2 className="header-name">Hi, {currentUser.username}!</h2>
-      <button className="header-button" onClick={logout}>Log Out</button>
-    </hgroup>
+    <div>
+      <hgroup className="header-group">
+        <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
+        <button className="header-button" onClick={this.props.logout}>Log Out</button>
+      </hgroup>
+      <div className="dropdown">
+          <i className="far fa-user-circle" onClick={this.yesmenu}>iiiiii</i>
+      </div>
+      {this.state.yesmenu ? (
+          <div className="navbar-dropdown">
+              <button className="navbar-button2" onClick={this.props.logout}>Log Out</button>
+          </div>
+      ) : (
+              null
+          )
+      }
+    </div>
   );
 
-  return currentUser ? personalGreeting() : sessionLinks();
+  return this.props.currentUser ? personalGreeting() : sessionLinks();
+  }
 };
 
 export default Greeting;
