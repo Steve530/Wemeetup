@@ -12,7 +12,7 @@ class Greeting extends React.Component {
       this.state = {
           yesmenu: false,
       };
-
+  
       this.yesmenu = this.yesmenu.bind(this);
       this.nomenu = this.nomenu.bind(this);
   }
