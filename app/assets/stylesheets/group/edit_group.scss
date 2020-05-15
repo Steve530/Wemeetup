@@ -2,7 +2,6 @@
     background-color: #fafafa;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .update-banner{
     position: relative;
     font-size: 24px;
@@ -16,7 +15,6 @@
     top: 100px;
     left: 10px;
     margin-bottom: 40px;
-
 }
 .create-2{
     position: absolute;
@@ -24,7 +22,6 @@
 }
 .input-2{
     margin-top: 15px;
-
 }
 .text1{
     margin-top: 15px;
@@ -39,10 +36,7 @@
     color: #fafafa;
     font-weight: bold;
     margin-left: 15px;
-
-
 }
-
 .deletebtn {
     font-size: 20px;
     font: bolder;  
@@ -63,11 +57,27 @@
     font: bolder;  
     width: 150px;
     cursor: pointer;
-
 }
- 
- 
-
 .submit-div{
     margin-bottom: 40px;
 }
+
+
+.create-group-container222 {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .edit-banner {
+    margin-top: 55px;
+    height: 250px;
+    background-image: url(https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-1.jpg);
+    background-position: 0 -45px;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    flex-direction: column;
+  
+  }

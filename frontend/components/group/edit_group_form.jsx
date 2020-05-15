@@ -70,21 +70,30 @@ render() {
                 }
             }
             />
-            <div className="update-banner">
-             <h1 className='update-group-title'>{this.state.group_name}</h1>
+            <div className="edit-banner">
+             {/*<h1 className='update-group-title'>{this.state.group_name}</h1> */}
+            
             </div>
+
+
+
+
 
             <form className="createform" onSubmit={this.handleSubmit}>
         
-                <div className="create-1">
+                <div className="edit-1">
+                    <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
+
                     <h1>Edit your group name</h1>
-                    <h4 className="italics">Choose a name that will give people a clear idea of what the group is about.</h4>
-                    <input className="input-2" type='text' onChange={this.update('group_name')} value={this.state.group_name} />
+                    {/* <h4 className="italics">Choose a name that will give people a clear idea of what the group is about.</h4> */}
+                    <input className="edit-input1" type='text' onChange={this.update('group_name')} value={this.state.group_name} />
                 </div>
                 <div className="create-2">
+                   <img className="create-icon" src="https://secure.meetupstatic.com/s/img/545971442246927/start_v2/tag.svg"/>
+
                     <h6 className="create-step"></h6>
                     <h1>Edit what your group is about</h1>
-                    <h4 className="italics2">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4>
+                    {/* <h4 className="italics2">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4> */}
                     <textarea className='text1' onChange={this.update('description')} value={this.state.description} />
                     <div className="submit-div">
                         <input type="submit" className="create-submit" value="Update group" />

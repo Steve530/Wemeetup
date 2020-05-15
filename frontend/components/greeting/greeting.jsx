@@ -43,14 +43,14 @@ class Greeting extends React.Component {
   );
   const personalGreeting = () => (
     <div>
-      <hgroup className="header-group">
-        <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
-        <button className="header-button" onClick={this.props.logout}>Log Out</button>
-      </hgroup>
-      <div className="dropdown">
-          <div className=" "><Icon icon={accountCircleOutline} /></div>
+       <hgroup className="header-group">
+         <span className="header-icon"><Icon width="30" height="30"  icon={accountCircleOutline} /></span>
+         
+        <div className="dropdown">
           <i className="dropdown-arrow" onClick={this.yesmenu}><Icon icon={chevronDown} /></i>
-      </div>
+        </div>
+       </hgroup>
+     
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
               <button className="navbar-button2" onClick={this.props.logout}>Log Out</button>
