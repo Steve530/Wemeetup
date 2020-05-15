@@ -18,7 +18,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 //steve
 import Splash from './splash/splash';
 const App = () => (
-  <div>
+  <div>  
     <header>  
       <Link to="/" className="header-link">
         <h1 id='top_welcome'> </h1>
