@@ -77,8 +77,6 @@ render() {
 
 
 
-
-
             <form className="createform" onSubmit={this.handleSubmit}>
         
                 <div className="edit-1">
