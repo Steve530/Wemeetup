@@ -33,7 +33,7 @@ class AfterloginIndex extends React.Component {
 
         { this.props.groups.map(group=> <AfterloginIndexItem key = {group.id} group={group}/>)}
       </div>
-    </div>
+    </div>  
   )} 
    
 };
