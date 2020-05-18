@@ -20,7 +20,7 @@ class AfterloginIndex extends React.Component {
                     174 events in your groups
                     </span>
                     <span class="text--middotLeft">
-                    1,295 events near you
+                    1,295 events near you  
                     </span>
                   </p>
               </a>
