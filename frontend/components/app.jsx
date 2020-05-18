@@ -11,6 +11,7 @@ import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import CreateGroupContainer from './group/create_group_container';
 import GroupIndexContainer from './group/group_index_container';
+import AfterloginContainer from './group/afterlogin_container';
 import EditGroupFormContainer from './group/edit_group_form_container';
 import GroupShowContainer from './group/group_show_container';
 import LogInFormContainer from './session_form/login_form_container';
@@ -30,8 +31,10 @@ const App = () => (
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
       <ProtectedRoute exact path="/newgroup" component={CreateGroupContainer} />
       <ProtectedRoute path="/groups/:groupId/manage" component={EditGroupFormContainer} />
+      <ProtectedRoute path="/afterlogin" component={AfterloginContainer} />
       <Route exact path="/groups/:groupId" component={GroupShowContainer} />
       <AuthRoute exact path="/groups" component={GroupIndexContainer} />
+
       <Route exact path="/" component={Splash} />
       <Redirect to='/'/>
     </Switch>
