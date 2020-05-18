@@ -8,7 +8,7 @@ const Splash = () => {
       <main className="splash">
         <video
           autoPlay
-          loop
+          loop 
           className="splash-video"
           >
           <source
