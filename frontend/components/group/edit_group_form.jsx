@@ -11,7 +11,7 @@ class EditGroupForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
     }
-
+  
 
 componentDidMount(){
      
