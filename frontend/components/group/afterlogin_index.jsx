@@ -8,7 +8,7 @@ class AfterloginIndex extends React.Component {
    this.props.fetchGroups();
  }
 
- render() { 
+ render() {   
   return(
     <div className='groupandpics'>
       <section id="member-home-header" class="stripe inverted">
