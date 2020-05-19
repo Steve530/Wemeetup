@@ -3,11 +3,14 @@ import AfterloginIndexItem from '../group/afterlogin_index_item';
 import { Link } from "react-router-dom";
 
 class AfterloginIndex extends React.Component {
-
+  // constructor(props) {
+  //   super(props);
+  // }
  componentDidMount() {
    this.props.fetchGroups();
  }
  render() {   
+   debugger
   return(
     <div className='groupandpics'>
       <section id="member-home-header">
@@ -23,7 +26,7 @@ class AfterloginIndex extends React.Component {
       <div>
         <h2 id='groupsttt'>YOUR GROUPS</h2>
         <div className='your_groups'>
-          { this.props.groups.filter(group => group.organizer.id === this.props.currentUser_id ).map(group=> 
+          { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
           <AfterloginIndexItem key = {group.id} group={group}/>)}
         </div>
       </div>
