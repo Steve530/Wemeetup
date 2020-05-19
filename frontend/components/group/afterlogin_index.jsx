@@ -7,29 +7,31 @@ class AfterloginIndex extends React.Component {
  componentDidMount() {
    this.props.fetchGroups();
  }
-
  render() {   
   return(
     <div className='groupandpics'>
-      <section id="member-home-header" class="stripe inverted">
+      <section id="member-home-header">
           <div id="member-home-bounds">
-                <h2 class="heroPrimary">Find your next event</h2>
-                  <p class="heroSecondary">
-                    <span>
-                    174 events in your groups
-                    </span>
-                    <span class="text--middotLeft">
-                    1,295 events near you  
+                <h2 className="heroPrimary">Find your next event</h2>
+                  <p >
+                    <span className="heroSecondary">
+                    174 events in your groups    .  1,295 events near you  
                     </span>
                   </p>
-             
           </div>
       </section>
+      <div>
+        <h2 id='groupsttt'>YOUR GROUPS</h2>
+        <div className='your_groups'>
+          { this.props.groups.filter(group => group.organizer.id === this.props.currentUser_id ).map(group=> 
+          <AfterloginIndexItem key = {group.id} group={group}/>)}
+        </div>
+      </div>
+
       <h2 id='groupsttt'>Groups near you</h2>
       <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4>
       <div className='jimmy_group_pic'>
-   
-
+  
         { this.props.groups.map(group=> <AfterloginIndexItem key = {group.id} group={group}/>)}
       </div>
     </div>  

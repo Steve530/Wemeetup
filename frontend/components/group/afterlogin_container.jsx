@@ -7,7 +7,9 @@ const msp = (state) => {
   if (state.entities.groups) {
     groups =  Object.values(state.entities.groups)
   }
+  
   return {
+    currentUser_id: state.session.id,
     groups: groups
   }
 };

@@ -2,15 +2,39 @@
     background: #00455d;
     height: 160px;
     position: relative;
-    margin-top: 5px;
+    margin-top: 7px;
 } 
 
 .heroPrimary {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 34px;
-    // position: absolute;
+    position: absolute;
     line-height: 1.25;
     text-align: center;
+    top: 20px;
+    left: 40%;
     font-family: "Graphik Meetup",helvetica,arial,sans-serif;
 }
+.heroSecondary {
+    color: rgba(255,255,255,.7);
+    font-size: 16px;
+    line-height: 1.45;
+    font-family: "Graphik Meetup",helvetica,arial,sans-serif;
+    font-weight: 400;
+    text-size-adjust:100%;
+    position: absolute;
+    line-height: 1.25;
+    text-align: center;
+    top: 80px;
+    left: 38%;
+}
+.your_groups {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+ 

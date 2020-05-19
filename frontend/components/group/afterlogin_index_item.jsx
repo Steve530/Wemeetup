@@ -24,7 +24,6 @@ class AfterloginIndexItem extends React.Component {
             <h4 id="group-item-name">{this.props.group.group_name}</h4>
            
           </div>
-          <h4>goooooood ? </h4>
         </div>
       </div>
           )
