@@ -13,7 +13,6 @@ class AfterloginIndex extends React.Component {
     <div className='groupandpics'>
       <section id="member-home-header" class="stripe inverted">
           <div id="member-home-bounds">
-              <a href="https://www.meetup.com/find/?events=true&amp;eventFilter=my" class="block align-center">
                 <h2 class="heroPrimary">Find your next event</h2>
                   <p class="heroSecondary">
                     <span>
@@ -23,7 +22,7 @@ class AfterloginIndex extends React.Component {
                     1,295 events near you  
                     </span>
                   </p>
-              </a>
+             
           </div>
       </section>
       <h2 id='groupsttt'>Groups near you</h2>

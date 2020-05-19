@@ -1,12 +1,15 @@
 #member-home-header {
     background: #00455d;
     height: 160px;
+    position: relative;
+    margin-top: 5px;
 } 
 
 .heroPrimary {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 34px;
+    // position: absolute;
     line-height: 1.25;
     text-align: center;
     font-family: "Graphik Meetup",helvetica,arial,sans-serif;
