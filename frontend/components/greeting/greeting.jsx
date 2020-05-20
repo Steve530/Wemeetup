@@ -39,6 +39,7 @@ class Greeting extends React.Component {
         <Link to="/login" className="toggle_btnin">Log in</Link>
         <Link to="/signup" className="toggle_btnup" >Sign up</Link>
       </div>
+      <hr className="border-line"/>
     </div>
   );
   const personalGreeting = () => (
@@ -49,6 +50,8 @@ class Greeting extends React.Component {
         <div className="dropdown">
           <i className="dropdown-arrow" onClick={this.yesmenu}><Icon icon={chevronDown} /></i>
         </div> 
+        <hr className="border-line"/>
+
        </hgroup>
      
       {this.state.yesmenu ? (
