@@ -22,7 +22,7 @@ class AfterloginIndex extends React.Component {
                     </span>
                   </p>
           </div>
-      </section>
+      </section> 
       <div>
         <h2 id='groupsttt'>YOUR GROUPS</h2>
         <div className='your_groups'>
@@ -31,6 +31,7 @@ class AfterloginIndex extends React.Component {
         </div>
         <hr className="hrtohelen"/>
       </div>
+      
 
       <h2 id='groupsttt'>Groups near you</h2>
       <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4>
