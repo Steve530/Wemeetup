@@ -12,7 +12,7 @@ const msp = (state) => {
     currentUser_id: state.session.id,
     groups: groups
   }
-};
+}; 
 
 const mdp = (dispatch) => {
   return {
