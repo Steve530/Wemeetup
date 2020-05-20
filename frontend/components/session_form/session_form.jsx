@@ -52,6 +52,7 @@ class SessionForm extends React.Component {
     
     return (
       <div className="login-form-container">
+
         <div className="welcome-line"></div>
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br/>
@@ -60,7 +61,7 @@ class SessionForm extends React.Component {
             <img className="icon" src="https://secure.meetupstatic.com/s/img/09300654065624139187/icon/icon_padlock.gif" alt="[lock icon]"></img>
             </h1> 
             <div id='Registered-with-us-yet'>Registered with us yet?{this.props.navLink} </div>
-           
+
           </div>
           {this.renderErrors()}
           <div className="login-form">

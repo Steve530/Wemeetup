@@ -29,9 +29,8 @@ class AfterloginIndex extends React.Component {
           { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
           <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
         </div>
-        <hr className="hrtohelen"/>
       </div>
-      
+
 
       <h2 id='groupsttt'>Groups near you</h2>
       <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4>
