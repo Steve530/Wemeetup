@@ -41,7 +41,7 @@ class Greeting extends React.Component {
       </div>
       <hr className="border-line"/>
     </div>
-  );
+  ); 
   const personalGreeting = () => (
     <div>
        <hgroup className="header-group">
