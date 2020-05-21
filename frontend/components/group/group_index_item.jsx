@@ -14,7 +14,7 @@ class GroupIndexItem extends React.Component {
    
   render() {
       let idd = this.props.group.id % 31;
-     
+    //  debugger
     return (
     
       <div className="group-index-item"  onClick={this.handleClick}>
@@ -22,6 +22,7 @@ class GroupIndexItem extends React.Component {
             <img src={`./${idd}.jpg`} />
           <div className="group-info_text">
             <h4 id="group-item-name">{this.props.group.group_name}</h4>
+            <p id="num-members">{this.props.group.membersarray} {this.props.group.group_name} members</p>
           </div>
         </div>
       </div>

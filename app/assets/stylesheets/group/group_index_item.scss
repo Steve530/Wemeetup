@@ -1,3 +1,7 @@
+// .group-info{
+//     margin-left: 100px;
+//     margin-right: 100px;
+// }
 .group-info img {
     width: 230px;
     height: 160px;
@@ -5,39 +9,40 @@
     margin-right: 10px;
     border-radius: 5px;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 .group-info-yours img {
-    // width: 150px;
-    // height: 150px;
-    width: 10vw;
-    height: 10vh;
-    margin-left: 10px;
+    width: 228px;
+    height: 180px;
+
+    // width: 8vw;
+    // height: 7vh;
+    margin-left: 1px;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     position: relative;
     margin-bottom: 25px;
     cursor: pointer;
 }
  
-.group-info_text {
-    color: black;
+#group-item-name {
+    color:white;
     position: relative;
-    font-size: 16px;
-    font-weight: 500;
-    bottom: 24px;
+    font-size: 20px;
+    font-family: "Graphik Meetup",helvetica,arial,sans-serif;
+    bottom: 35px;
     margin-left: 12px;
     cursor: pointer;
-    transform: translateY(-50px);
+    transform: translateY(-45px);
 
 }
 .jimmy_group_pic {
     margin-top: 20px;
     display: flex;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    left: 160px;
+    margin-right: 160px;
     flex-wrap: wrap;
     // overflow: hidden;
 }
@@ -46,7 +51,7 @@
     margin-left: 20px;
     font-size: 20px;
     font-weight: 600;
-   color: rgb(33, 33, 33);
+    color: rgb(33, 33, 33);
     font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #under-groupsttt {
@@ -60,7 +65,22 @@
 
 .groupandpics{
     margin-top: 40px;
-    margin-left: 2px;
+    margin-left: 16%;
+    margin-right: 10px;
     overflow: hidden;
-
+    justify-content: center;
+}
+#num-members{
+    position: relative;
+   font-size:  13px;
+   bottom: 20px;
+   transform: translateY(-55px);
+   margin-left: 12px;
+   color: rgba(255,255,255,.7);
+   font-family: "Graphik Meetup",helvetica,arial,sans-serif;
+    font-weight: 400;
+   display: block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 }

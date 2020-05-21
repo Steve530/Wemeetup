@@ -10,7 +10,7 @@ class AfterloginIndex extends React.Component {
    this.props.fetchGroups();
  }
  render() {   
-   debugger
+   
   return(
     <div className='groupandpics'>
       <section id="member-home-header">
@@ -23,8 +23,8 @@ class AfterloginIndex extends React.Component {
                   </p>
           </div>
       </section> 
-      <div>
-        <h2 id='groupsttt'>YOUR GROUPS</h2>
+      <div className="all-groups-images">
+        <h2 id='afterlogin-urgroups'>YOUR GROUPS</h2>
         <div className='your_groups'>
           { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
           <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
@@ -32,8 +32,8 @@ class AfterloginIndex extends React.Component {
       </div>
 
 
-      <h2 id='groupsttt'>Groups near you</h2>
-      <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4>
+      <h2 id='groupsttt'>SUGGESTED GROUPS</h2>
+      {/* <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4> */}
       <div className='jimmy_group_pic'>
   
         { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}

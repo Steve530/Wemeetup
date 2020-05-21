@@ -1,9 +1,24 @@
 #member-home-header {
     background: #00455d;
     height: 160px;
-    position: relative;
+    position: absolute;
+    left: -80px;
+    right: -100px;
+    // width: 100%;
     margin-top: 7px;
 } 
+#afterlogin-urgroups {
+    // padding-top: 15px;
+    // margin-left: 20px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 600;
+    top: 250px;
+    left: 17%;
+    z-index: 4;
+    color: rgb(33, 33, 33);
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
    
 .heroPrimary {
     color: #FFFFFF;
@@ -30,7 +45,7 @@
     left: 38%;
 }
 .your_groups {
-    margin-top: 20px;
+    margin-top: 230px;
     display: flex;
     width: 100%;
     margin-left: 10px;
