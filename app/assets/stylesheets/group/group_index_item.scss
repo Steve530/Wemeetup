@@ -19,10 +19,23 @@
     // width: 8vw;
     // height: 7vh;
     margin-left: 1px;
-    margin-right: 10px;
+    margin-right: 15px;
     border-radius: 3px;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: -25px;
+    cursor: pointer;
+}
+.group-info2 img {
+    width: 320px;
+    height: 180px;
+
+    // width: 8vw;
+    // height: 7vh;
+    margin-left: 1px;
+    margin-right: 15px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: -25px;
     cursor: pointer;
 }
  
@@ -34,7 +47,7 @@
     bottom: 35px;
     margin-left: 12px;
     cursor: pointer;
-    transform: translateY(-45px);
+    transform: translateY(-5px);
 
 }
 .jimmy_group_pic {
@@ -74,7 +87,7 @@
     position: relative;
    font-size:  13px;
    bottom: 20px;
-   transform: translateY(-55px);
+   transform: translateY(-15px);
    margin-left: 12px;
    color: rgba(255,255,255,.7);
    font-family: "Graphik Meetup",helvetica,arial,sans-serif;

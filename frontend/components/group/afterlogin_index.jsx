@@ -18,7 +18,7 @@ class AfterloginIndex extends React.Component {
                 <h2 className="heroPrimary">Find your next event</h2>
                   <p >
                     <span className="heroSecondary">
-                    174 events in your groups    .  1,295 events near you  
+                    174 events in your groups  . 1,295 events near you  
                     </span>
                   </p>
           </div>
@@ -30,9 +30,9 @@ class AfterloginIndex extends React.Component {
           <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
         </div>
       </div>
+      <hr className="afterlogin-border"/>
 
-
-      <h2 id='groupsttt'>SUGGESTED GROUPS</h2>
+      <h4 id='afterlogin-urgroups2'>SUGGESTED GROUPS</h4>
       {/* <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4> */}
       <div className='jimmy_group_pic'>
   

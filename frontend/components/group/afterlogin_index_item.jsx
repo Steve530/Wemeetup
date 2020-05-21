@@ -18,7 +18,7 @@ class AfterloginIndexItem extends React.Component {
     return (
     
       <div className="group-index-item"  onClick={this.handleClick}>
-        <div className={this.props.type==="yourgroups" ? "group-info-yours" : "group-info"}>
+        <div className={this.props.type==="yourgroups" ? "group-info-yours" : "group-info2"}>
             <img src={`./${idd}.jpg`} />
           <div className="group-info-text">
             <h4 id="group-item-name">{this.props.group.group_name}</h4>

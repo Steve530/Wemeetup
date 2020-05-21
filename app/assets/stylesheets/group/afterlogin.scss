@@ -27,7 +27,7 @@
     position: absolute;
     line-height: 1.25;
     text-align: center;
-    top: 20px;
+    top: 30px;
     left: 40%;
     font-family: "Graphik Meetup",helvetica,arial,sans-serif;
 }
@@ -52,4 +52,15 @@
     margin-right: 10px;
     flex-wrap: wrap;
 }
- 
+ .afterlogin-border{
+     position: relative;
+     margin-top: 20px;
+     margin-bottom: 30px;
+     left:1%;
+     width: 980px;
+     border: 1px solid rgb(241, 239, 239); 
+ }
+ #afterlogin-urgroups2{
+     position: relative;
+     left: 15px;
+ }
