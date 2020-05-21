@@ -40,7 +40,7 @@ class AfterloginIndex extends React.Component {
       </div>
     </div>  
   )} 
-   
+    
 };
 
 
