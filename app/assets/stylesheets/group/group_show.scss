@@ -1,3 +1,4 @@
+
 .group-showpage img {
     display: flex;
     width: 600px;
@@ -159,12 +160,15 @@
 .groupshow-border{
     position: absolute;
     top: 65px;
-    // right: -12px;
-    width: 100%;
+    overflow: hidden;
+    // width: 90.9%;
     border: 1px solid rgb(241, 239, 239); 
 }
 .groupshow-border2{
     position: absolute;
-margin-top: 18px;    width: 100%;
+    margin-top: 18px;  
+    // width: 90.9%;
+    overflow: hidden;
+
     border: 1px solid rgb(241, 239, 239); 
 }

@@ -54,8 +54,8 @@ class GroupShow extends React.Component {
             showmanage = "nomanage"
         }
         return(
-            <div>
-                <hr className="groupshow-border"/>
+            <div className="groupshowpage">
+                {/* <hr className="groupshow-border"/> */}
                 <p id='group_page_name'>{this.props.group.group_name}</p>
                 <div>
                     <div className='icon1map'><Icon icon={mapzenIcon} /></div>
@@ -79,7 +79,7 @@ class GroupShow extends React.Component {
                 <div className="group-showpage">
                     <img src={`./${idd}.jpg`} />
                 </div>
-                <hr className="groupshow-border2"/>
+                {/* <hr className="groupshow-border2"/> */}
 
                 <h2 id='whatweabout'>What we're about</h2>
                 <div className='aboutgroup'>

@@ -24,19 +24,22 @@ class AfterloginIndex extends React.Component {
           </div>
       </section> 
       <div className="all-groups-images">
-        <h2 id='afterlogin-urgroups'>YOUR GROUPS</h2>
-        <div className='your_groups'>
-          { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
-          <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
-        </div>
-      </div>
-      <hr className="afterlogin-border"/>
+            <h2 id='afterlogin-urgroups'>YOUR GROUPS</h2>
+            <div className='your_groups'>
+              { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
+              <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
+            </div>
+            <hr className="afterlogin-border"/>
+         
+            <div className="groupsbelow">
+                <h4 id='afterlogin-urgroups2'>SUGGESTED GROUPS</h4>
+                <div className='afterlogin_group_pic'>
+                  { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}
+                </div>
+            </div>
 
-      <h4 id='afterlogin-urgroups2'>SUGGESTED GROUPS</h4>
-      <div className='afterlogin_group_pic'>
-  
-        { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}
       </div>
+       
     </div>  
   )} 
       
