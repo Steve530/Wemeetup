@@ -12,7 +12,7 @@ class AfterloginIndex extends React.Component {
  render() {   
    
   return(
-    <div className='groupandpics'>
+    <div className='afterlogin-groupandpics'>
       <section id="member-home-header">
           <div id="member-home-bounds">
                 <h2 className="heroPrimary">Find your next event</h2>
@@ -34,7 +34,7 @@ class AfterloginIndex extends React.Component {
 
       <h4 id='afterlogin-urgroups2'>SUGGESTED GROUPS</h4>
       {/* <h4  id='under-groupsttt'>Find groups that get together to do the things they love.</h4> */}
-      <div className='jimmy_group_pic'>
+      <div className='afterlogin_group_pic'>
   
         { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}
       </div>

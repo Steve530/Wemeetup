@@ -2,9 +2,9 @@
     background: #00455d;
     height: 160px;
     position: absolute;
-    left: -80px;
-    right: -100px;
-    // width: 100%;
+    // left: -80px;
+    right: 0px;
+    width: 100%;
     margin-top: 7px;
 } 
 #afterlogin-urgroups {
@@ -64,3 +64,30 @@
      position: relative;
      left: 15px;
  }
+//  .afterlogin_group_pic{
+//     margin-top: 20px;
+//     display: flex;
+//     width: 100%;
+//     left: 160px;
+//     margin-right: 160px;
+//     flex-wrap: wrap;
+//  }
+ .afterlogin-groupandpics{
+     overflow: hidden;
+     width: 100%;
+     display: flex;
+ }
+ .group-info2 img {
+    width: 309.33px;
+    height: 180px;
+    left: 10px;
+    // width: 8vw;
+    // height: 7vh;
+    margin-left: 1px;
+    margin-right: 15px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: -25px;
+    cursor: pointer;
+}
+ 
