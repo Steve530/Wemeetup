@@ -12,7 +12,7 @@ const Splash = () => {
           className="splash-video"
           >
           <source
-            src="https://www.meetup.com/mu_static/en-US/dddafbfe4574fc19c6718950691dcb78.mp4"
+            src="https://www.meetup.com/mu_static/en-US/video.dddafbfe.mp4"
             type="video/mp4"
           />
         </video>

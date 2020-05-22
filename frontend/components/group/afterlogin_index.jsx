@@ -32,7 +32,7 @@ class AfterloginIndex extends React.Component {
             <hr className="afterlogin-border"/>
          
             <div className="groupsbelow">
-                <h4 id='afterlogin-urgroups2'>SUGGESTED GROUPS</h4>
+                <h4 id='text-suggestedgroup'>SUGGESTED GROUPS</h4>
                 <div className='afterlogin_group_pic'>
                   { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}
                 </div>
