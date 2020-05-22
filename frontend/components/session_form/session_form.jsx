@@ -47,9 +47,7 @@ class SessionForm extends React.Component {
       </ul>
     );
   }
-
   render() {
-    
     return (
       <div className="login-form-container">
 

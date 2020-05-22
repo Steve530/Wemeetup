@@ -72,7 +72,7 @@ font-family: "Graphik Meetup",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,
     font-weight: 600;
     font-family: "Graphik Meetup",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
     // border-right: 1px solid black;
-    // z-index: 4;
+    z-index: 4;
 } 
 // .navborder {  
 //     border-right: 1px solid black;
@@ -84,12 +84,14 @@ font-family: "Graphik Meetup",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,
     top: 20px;
     width: 24px; 
     height: 24px; 
+    z-index: 3;
 }
 .dropdown-arrow{
     position: absolute;
     right: 80px;
     top: 27px;
     cursor: pointer;
+    z-index: 4;
 } 
 .login-border{
     position: absolute;
