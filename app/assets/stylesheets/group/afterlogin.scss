@@ -1,9 +1,9 @@
 #member-home-header {
     background: #00455d;
     height: 160px;
-    position: absolute;
+    position: relative;
     // left: -80px;
-    right: 0px;
+    // right: 0px;
     width: 100%;
     margin-top: 7px;
 } 
@@ -15,7 +15,6 @@
     font-weight: 600;
     top: 250px;
     left: 17%;
-    z-index: 4;
     color: rgb(33, 33, 33);
     font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
