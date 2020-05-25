@@ -160,15 +160,16 @@
 .groupshow-border{
     position: absolute;
     top: 65px;
+    width: 99%;
     overflow: hidden;
-    // width: 90.9%;
+    left: 10px;
     border: 1px solid rgb(241, 239, 239); 
 }
 .groupshow-border2{
     position: absolute;
     margin-top: 18px;  
-    // width: 90.9%;
+    width: 99%;
     overflow: hidden;
-
+    left: 10px;
     border: 1px solid rgb(241, 239, 239); 
 }
