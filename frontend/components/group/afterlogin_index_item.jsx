@@ -23,7 +23,7 @@ class AfterloginIndexItem extends React.Component {
           <div className="group-info-text">
             <h4 id="group-item-name">{this.props.group.group_name}</h4>
             <p id="num-members">{this.props.group.membersarray} {this.props.group.group_name} members</p>
-  
+    
           </div>  
         </div>
       </div>
