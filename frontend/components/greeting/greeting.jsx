@@ -44,7 +44,7 @@ class Greeting extends React.Component {
     </div>
   );  
   const personalGreeting = () => (
-    <div>
+    <div className="hero">
        <hgroup className="header-group">
          <span className="header-icon"><Icon width="30" height="30"  icon={accountCircleOutline} /></span>
          {/* <div className="border-right"></div> */}
