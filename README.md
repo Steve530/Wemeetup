@@ -12,13 +12,50 @@ Wemeetup is developed with a Ruby on Rails backend, a PostgreSQL database and is
 In addition, this website employed Jbuilder, NodeJs, JQuery to make AJAX requests, Node Package Manager (npm), webpack, React DOM, React Router, React History for browser history manipulation.
 
 ## Features
-Users can create an account and log in securely (with bcrypt) with custom error handling. Once logged in, the user will be able to create groups and edit group. If a user is trying to create a group without logging in,the page will be redirected to the log in page.
+
+### User Authorization
+* Users can create an account and log in securely.
+* Error handling and validations upon sign up.
+* Once logged in, the user will be able to create groups and edit group. 
 
  <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/show3.gif"/> 
 
-## Code Snippets
-Utilization of protected and authenticated routes with React Router.  This allows the developer to dictate user access depending on their login state.
+```javascript
+const mapStateToProps = ({ errors }) => {
+  return {
+    errors: errors.session,
+    formType: 'signup',
+    navLink: <Link to="/login" className="toggle_btn" >log in</Link>,
+  };
+};  
+const mapDispatchToProps = dispatch => {
+  return {
+    processForm: (user) => dispatch(signup(user)),
+    clearSessionErrors: () => dispatch(clearSessionErrors())  };
+};
 ```
+<img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/loginup.png"/>
+
+```javascript
+demouser(e){
+    e.preventDefault();
+    this.props.processForm({
+      username: 'Steven',
+      password: '12345678'
+    }).then(()=> this.props.history.push(`afterlogin`));
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const user = Object.assign({}, this.state);
+    this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
+  }
+```
+## Code Snippets
+
+If a user is trying to create a group without logging in,the page will be redirected to the log in page.
+
+Utilization of protected and authenticated routes with React Router.  This allows the developer to dictate user access depending on their login state.
+```javascript
 const App = () => (
   <div>
     <header>  

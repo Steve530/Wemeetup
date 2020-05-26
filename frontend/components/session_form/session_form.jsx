@@ -20,20 +20,15 @@ class SessionForm extends React.Component {
   }
   demouser(e){
     e.preventDefault();
-    // debugger
     this.props.processForm({
       username: 'Steven',
       password: '12345678'
     }).then(()=> this.props.history.push(`afterlogin`));
-    
   }
-
   handleSubmit(e) {
     e.preventDefault();
-    // debugger
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))
-    
+    this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
   }
 
   renderErrors() {
