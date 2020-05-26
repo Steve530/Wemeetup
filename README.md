@@ -16,45 +16,9 @@ In addition, this website employed Jbuilder, NodeJs, JQuery to make AJAX request
 ### User Authorization
 * Users can create an account and log in securely.
 * Error handling and validations upon sign up.
-* Once logged in, the user will be able to create groups and edit group. 
-
- <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/show3.gif"/> 
-
-```javascript
-const mapStateToProps = ({ errors }) => {
-  return {
-    errors: errors.session,
-    formType: 'signup',
-    navLink: <Link to="/login" className="toggle_btn" >log in</Link>,
-  };
-};  
-const mapDispatchToProps = dispatch => {
-  return {
-    processForm: (user) => dispatch(signup(user)),
-    clearSessionErrors: () => dispatch(clearSessionErrors())  };
-};
-```
+* Utilization of protected and authenticated routes with React Router.  This allows the developer to dictate user access depending on their login state.
 <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/loginup.png"/>
 
-```javascript
-demouser(e){
-    e.preventDefault();
-    this.props.processForm({
-      username: 'Steven',
-      password: '12345678'
-    }).then(()=> this.props.history.push(`afterlogin`));
-  }
-  handleSubmit(e) {
-    e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
-  }
-```
-## Code Snippets
-
-If a user is trying to create a group without logging in,the page will be redirected to the log in page.
-
-Utilization of protected and authenticated routes with React Router.  This allows the developer to dictate user access depending on their login state.
 ```javascript
 const App = () => (
   <div>
@@ -77,10 +41,34 @@ const App = () => (
   </div>
 );
 ```
-
-Below displays how the developer can redirect users based on where they are on the webpage with the Redux history property.  In this example, the user is redirected to the group show page upon submission of a newly created group, thus allowing the user to see the new group they have created.
-
+```javascript
+const mapStateToProps = ({ errors }) => {
+  return {
+    errors: errors.session,
+    formType: 'signup',
+    navLink: <Link to="/login" className="toggle_btn" >log in</Link>,
+  };
+};  
+const mapDispatchToProps = dispatch => {
+  return {
+    processForm: (user) => dispatch(signup(user)),
+    clearSessionErrors: () => dispatch(clearSessionErrors())  };
+};
 ```
+### Create Groups and Show Group
+* Once logged in, the user will be able to create groups and edit group. 
+* Redirected to the log in page if a user is trying to create a group without logging in 
+* Redirect users based on where they are on the webpage with the Redux history property. The user is redirected to the group show page upon submission of a newly created group.
+ <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/show3.gif"/> 
+
+```javascript
+  handleSubmit(e) {
+    e.preventDefault();
+    const user = Object.assign({}, this.state);
+    this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
+  }
+```
+```javascript
 handleSubmit(e) {
     e.preventDefault();
         if (this.state.group_name.length >=31) alert('Group name less than 30 chars pls :)')
