@@ -20,7 +20,7 @@ class Greeting extends React.Component {
   yesmenu(e) {
       e.preventDefault();
 
-      this.setState({
+      this.setState({ 
           yesmenu: true,
       }, () => {
           document.addEventListener('click', this.nomenu);
