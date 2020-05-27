@@ -13,6 +13,7 @@ class Greeting extends React.Component {
           yesmenu: false,
       };
   
+      this.handlelogout = this.handlelogout.bind(this);
       this.yesmenu = this.yesmenu.bind(this);
       this.nomenu = this.nomenu.bind(this);
   }
@@ -26,7 +27,10 @@ class Greeting extends React.Component {
           document.addEventListener('click', this.nomenu);
       });
   }
-
+  handlelogout() {
+    this.props.logout();
+    this.props.history.push("/")
+  }
   nomenu() {
       this.setState({ yesmenu: false }, () => {
           document.removeEventListener('click', this.nomenu);
@@ -56,7 +60,7 @@ class Greeting extends React.Component {
      
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
-              <button className="navbar-button2" onClick={this.props.logout}>Log Out</button>
+              <button className="navbar-button2" onClick={this.handlelogout}>Log Out</button>
           </div>
       ) : (
               null
