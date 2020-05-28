@@ -78,6 +78,38 @@ handleSubmit(e) {
   };
 
 ```
+ <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/creategroup.png"/> 
+
+```javascript
+  handleSubmit(e) {
+    e.preventDefault();
+    if (this.state.group_name.length >=31) alert('Group name less than 30 chars pls :)')
+    else {const group = Object.assign({}, this.state);
+      this.props.createGroup(group).then( (group) => this.props.history.push(`groups/${group.id}`)
+    )}
+  };
+
+  update (field) {
+    return (e) => {
+      this.setState({
+        [field]: e.target.value
+      })
+    }
+  }
+```
+
+ <img src= "https://github.com/Steve530/Wemeetup/blob/master/app/assets/images/yourgroups.png"/> 
+
+```javascript
+ componentDidMount() {
+   this.props.fetchGroups();
+ }
+
+ handleClick() {
+    this.props.history.push(`/groups/${this.props.group.id}`)
+  }
+
+```
 ## Installation on UNIX
 1. Follow the guide <a href="https://guides.rubygems.org/rubygems-basics/" target="_blank">here</a> to set up your ruby environment and install gem and bundler.
 2. Clone the repository. git clone https://github.com/Steve530/Wemeetup.git

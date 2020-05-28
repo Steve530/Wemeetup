@@ -54,9 +54,8 @@ class SessionForm extends React.Component {
             <img className="icon" src="https://secure.meetupstatic.com/s/img/09300654065624139187/icon/icon_padlock.gif" alt="[lock icon]"></img>
             </h1> 
             <div id='Registered-with-us-yet'>Registered with us yet?{this.props.navLink} </div>
-
           </div>
-          {this.renderErrors()}
+          <div id="errorspopup">{this.renderErrors()}</div>
           <div className="login-form">
             <br/>
             <label><p>Username:</p>  
@@ -95,9 +94,9 @@ class SessionForm extends React.Component {
             <br/>
             <br/> 
             <input className="session-submit" type="submit" value={this.props.formType} />
+            <button onClick={this.demouser} className="demo-submit"  value='login'>Demo User</button>
            </div>
         </form>
-            <button onClick={this.demouser} className="demo-submit"  value='login'>Demo User</button>
 
       </div>
     );
