@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 class AfterloginIndex extends React.Component {
   // constructor(props) {
   //   super(props);
-  // }
+  // }  
  componentDidMount() {
    this.props.fetchGroups();
  }
@@ -16,7 +16,7 @@ class AfterloginIndex extends React.Component {
       <section id="member-home-header">
           <div id="member-home-bounds">
                 <h2 className="heroPrimary">Find your next event</h2>
-                  <p >
+                  <p > 
                     <span className="heroSecondary">
                     174 events in your groups  . 1,295 events near you  
                     </span>
