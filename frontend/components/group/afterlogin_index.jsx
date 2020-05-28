@@ -9,7 +9,7 @@ class AfterloginIndex extends React.Component {
  componentDidMount() {
    this.props.fetchGroups();
  }
- render() {   
+ render() {
    
   return(
     <div className='afterlogin-groupandpics'>
