@@ -13,7 +13,7 @@ const msp = (state, ownProps) => {
     const group = state.entities.groups[ownProps.match.params.groupId] || defaultGroup;
     const formType = 'Update Group'
      debugger
-    return {
+    return { 
         currentUser: state.session.currentUser,
         group,
         formType

@@ -60,7 +60,7 @@ render() {
     return( 
         <div className='update-all'>
             <Route 
-                path='/newgroup'
+                path='/newgroup' 
                 render={ () => {
                     if (!this.props.currentUser) {
                         return <Redirect to='/login' />
