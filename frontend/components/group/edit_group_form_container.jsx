@@ -9,7 +9,7 @@ const msp = (state, ownProps) => {
         description: '',
         organzer_id: 2,  
     };
-  
+    
     const group = state.entities.groups[ownProps.match.params.groupId] || defaultGroup;
     const formType = 'Update Group'
      debugger

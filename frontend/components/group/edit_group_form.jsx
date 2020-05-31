@@ -68,7 +68,7 @@ render() {
                         return <Redirect to='/' />
                     }
                 }
-            }  
+            }   
             />
             <div className="edit-banner">
              {/*<h1 className='update-group-title'>{this.state.group_name}</h1> */}
