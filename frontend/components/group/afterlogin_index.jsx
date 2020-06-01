@@ -11,7 +11,7 @@ class AfterloginIndex extends React.Component {
  }
  render() {
    
-  return(
+  return( 
     <div className='afterlogin-groupandpics'>
       <section id="member-home-header">
           <div id="member-home-bounds">
