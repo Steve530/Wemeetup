@@ -20,7 +20,7 @@ class AfterloginIndex extends React.Component {
                     <span className="heroSecondary">
                     174 events in your groups  . 1,295 events near you  
                     </span> 
-                  </p>
+                  </p> 
           </div>
       </section> 
       <div className="all-groups-images">
