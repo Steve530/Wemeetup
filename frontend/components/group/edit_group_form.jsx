@@ -66,7 +66,7 @@ render() {
                         return <Redirect to='/login' />
                     } else if (this.props.currentUser != this.props.group.organizer_id) {
                         return <Redirect to='/' />
-                    }
+                    }  
                 }
             }   
             />

@@ -15,7 +15,7 @@ const msp = (state, ownProps) => {
      debugger
     return { 
         currentUser: state.session.currentUser,
-        group,
+        group,  
         formType
         
     }
