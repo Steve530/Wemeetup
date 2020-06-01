@@ -19,5 +19,5 @@ const mdp = (dispatch) => {
     fetchGroups: () => dispatch(fetchGroups())
   }
 }
-
+ 
 export default connect(msp, mdp)(AfterloginIndex);
