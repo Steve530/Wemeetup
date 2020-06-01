@@ -21,7 +21,7 @@ class AfterloginIndex extends React.Component {
                     174 events in your groups  . 1,295 events near you  
                     </span> 
                   </p> 
-          </div>
+          </div> 
       </section> 
       <div className="all-groups-images">
             <h2 id='afterlogin-urgroups'>YOUR GROUPS</h2>
