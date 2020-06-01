@@ -8,7 +8,7 @@ class AfterloginIndexItem extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
      
-  handleClick() { 
+  handleClick() {  
     this.props.history.push(`/groups/${this.props.group.id}`)
   }  
        
