@@ -98,8 +98,9 @@ font-family: "Graphik Meetup",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,
     top: 35px;
     right: -12px;
     width: 600%;
-    border: 1px solid rgb(241, 239, 239); 
+    border: 0.4px solid rgba(0,0,0,.12)!important;
 }
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-color: #FAFAFA;
 }
