@@ -53,7 +53,7 @@ class SessionForm extends React.Component {
             <h1 id="login-signup">{this.props.formType} </h1> 
             <div id='Registered-with-us-yet'>Not registered with us yet?  {this.props.navLink}  </div>
             <hr id="border-above-email"/>
-          </div>
+          </div> 
           <div id="errorspopup">{this.renderErrors()}</div>
           <div className="login-form">
             <br/>
