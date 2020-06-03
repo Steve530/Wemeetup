@@ -50,27 +50,25 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br/>
           <div className='login_or_signup' >
-            <h1>{this.props.formType}
-            <img className="icon" src="https://secure.meetupstatic.com/s/img/09300654065624139187/icon/icon_padlock.gif" alt="[lock icon]"></img>
-            </h1> 
-            <div id='Registered-with-us-yet'>Not registered with us yet?<a id="signin2">{this.props.navLink}</a> </div>
+            <h1 id="login-signup">{this.props.formType} </h1> 
+            <div id='Registered-with-us-yet'>Not registered with us yet?  {this.props.navLink}  </div>
             <hr id="border-above-email"/>
           </div>
           <div id="errorspopup">{this.renderErrors()}</div>
           <div className="login-form">
             <br/>
-            <label><p>Username:</p>  
+            <label><p id="username">Username:</p>  
             <br/>
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-                className="login-input"  
+                className="username-input"  
               />
             </label>
             <br/>
             <br/>  
             { (this.props.formType !== 'login') ? (<div>
-              <label><p>Email:</p>  
+              <label><p id="email">Email:</p>  
               <br/>
                 <input type="text"
                   value={this.state.email}
@@ -82,7 +80,7 @@ class SessionForm extends React.Component {
             }
             <br/>
             <br/>
-            <label><p>Password:</p>
+            <label><p id="password">Password:</p>
             <br/>
               <input type="password"
                 value={this.state.password}
