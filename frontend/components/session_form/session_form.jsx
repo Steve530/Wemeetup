@@ -56,7 +56,7 @@ class SessionForm extends React.Component {
           </div>     
           <div id="errorspopup">{this.renderErrors()}</div>
           <div className="login-form">
-            <br/>
+            <br/> 
             <label><p id="username">Username:</p>  
             <br/>
               <input type="text"
