@@ -17,8 +17,8 @@ class CreateGroup extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (this.state.group_name.length >=31) alert('Group name less than 30 chars pls :)')
-    if (this.state.group_name.length < 1) alert('Group name can not be empty! :)')
-    if (this.state.description.length < 1) alert('Group description can not be empty! :)')
+    if ((this.state.group_name.length < 1)||(this.state.description.length < 1)) alert('Group name or description can not be empty! :)')
+    
     else {const group = Object.assign({}, this.state);
       this.props.createGroup(group).then( (group) => this.props.history.push(`groups/${group.id}`)
     )}
