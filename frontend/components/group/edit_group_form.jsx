@@ -72,22 +72,23 @@ render() {
             />
             <div className="edit-banner">
              {/*<h1 className='update-group-title'>{this.state.group_name}</h1> */}
-            
+             <h1 className="edit-title">Edit Your Group</h1>
             </div>
 
-            <form className="createform" onSubmit={this.handleSubmit}>
+            <div className="edit-group-section"> 
+             <form className="edit-form" onSubmit={this.handleSubmit}>
         
-                <div className="edit-1">
+                <div className="edit-group4-input">
                     <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
 
-                    <h1>Edit your group name</h1>
+                    <h1 id="edit-group-name">Edit your group name</h1>
                     {/* <h4 className="italics">Choose a name that will give people a clear idea of what the group is about.</h4> */}
                     <input className="edit-input1" type='text' onChange={this.update('group_name')} value={this.state.group_name} />
                 </div>
-                <div className="create-2">
+                <div className="create4-2">
                    <img className="create-icon" src="https://secure.meetupstatic.com/s/img/545971442246927/start_v2/tag.svg"/>
 
-                    <h6 className="create-step"></h6>
+                    <h6 className="create4-step"></h6>
                     <h1>Edit what your group is about</h1>
                     {/* <h4 className="italics2">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4> */}
                     <textarea className='text1' onChange={this.update('description')} value={this.state.description} />
@@ -97,8 +98,8 @@ render() {
                         <button className="deletebtn" onClick={this.handleDelete}>Delete group</button>
                     </div>
                 </div>
-            </form>
-
+             </form>
+            </div>
 
         </div>
     )

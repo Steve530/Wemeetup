@@ -14,7 +14,6 @@ class GroupIndexItem extends React.Component {
    
   render() {
       let idd = this.props.group.id % 31;
-    //  debugger
     return (
     
       <div className="group-index-item"  onClick={this.handleClick}>

@@ -17,6 +17,8 @@ class CreateGroup extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (this.state.group_name.length >=31) alert('Group name less than 30 chars pls :)')
+    if (this.state.group_name.length < 1) alert('Group name can not be empty! :)')
+    if (this.state.description.length < 1) alert('Group description can not be empty! :)')
     else {const group = Object.assign({}, this.state);
       this.props.createGroup(group).then( (group) => this.props.history.push(`groups/${group.id}`)
     )}
@@ -47,7 +49,7 @@ class CreateGroup extends React.Component {
             <div className='create-group-inputs-container'>
 
                 <div className="create-group-input">
-                <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
+                  <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
                     <span className="step-span">Step 1 of 3</span>
                   <label htmlFor='form-name'>What will your Meetup's name be?</label>
                       <input 

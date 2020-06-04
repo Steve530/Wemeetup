@@ -17,7 +17,6 @@ const mstp = (state) => {
 };
 
 const mdtp = (dispatch) => {
-  // debugger
   return {
     createGroup: (group) => dispatch(createGroup(group))
   }

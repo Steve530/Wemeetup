@@ -50,7 +50,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br/>
           <div className='login_or_signup' >
-            <h1 id="login-signup">{this.props.formType} </h1> 
+            <h1 id="login-signup">{(this.props.formType === 'login') ? "Log in" : "Sign up"} </h1>
             <div id='Registered-with-us-yet'>Not registered with us yet?  {this.props.navLink}  </div>
             <hr id="border-above-email"/>
           </div>     
@@ -95,7 +95,7 @@ class SessionForm extends React.Component {
             <input className="session-submit" type="submit" value={this.props.formType} />
             
             
-            <div className="footbox">
+            <div className={(this.props.formType === 'login') ? "footbox" : "no-footbox"}>
               <div className="login-body-or">OR</div>
               <button onClick={this.demouser} className="demo-submit"  value='login'>Demo User Login </button>
             </div>
