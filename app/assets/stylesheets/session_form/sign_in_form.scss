@@ -1,7 +1,7 @@
 
 .login-form-container{
     width: 458px ;
-    height: 522px;
+    height: 452px;
     // margin: 6% auto;
     position: relative;
     top: 130px;
@@ -30,6 +30,9 @@
     border-radius: 3px;
     font-size:21px;
     cursor: pointer;
+    position: relative;
+    top: -75px;
+    left:8px;
  }
 .login_or_signup{
   
@@ -56,10 +59,11 @@ div label p {
 
 }
 .demo-submit {
-    background-color: crimson;
-    margin-left: 30px;
-    width: 140px;
-    height: 40px;
+    background: #3b5998;
+        margin-left: 17px;
+        margin-top: 35px;
+    width: 421.73px;
+    height: 47px;
     text-align: center;
     color: white;
     font-weight: bolder;
@@ -67,6 +71,7 @@ div label p {
     font-size:18px;
     cursor: pointer;
     border: none;
+
 }
 .smalllink {
     text-decoration: none;
@@ -108,5 +113,26 @@ input{
     border: none;
     border: 1px solid rgba(0,0,0,.12);
     border-radius: 3px;
-
 }
+
+.login-body-or {
+    position: absolute;
+    width: 32px;
+    font-weight: 700;
+    background-color:white;
+    text-align: center;
+    border-radius: 3px;
+    left: 50%;
+    top: -10px;
+    display: block;
+    margin-left: -16px;
+
+  }
+  .footbox{
+    position: relative;
+    background-color: #D8DFEA;
+    height: 120px;
+    margin-bottom: 40px;
+    border-top: 1px solid #627aad;
+    top: -55px;
+  }
