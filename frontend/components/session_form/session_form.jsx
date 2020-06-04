@@ -92,7 +92,7 @@ class SessionForm extends React.Component {
             <br/>
             <br/>
             <br/> 
-            <input className="session-submit" type="submit" value={this.props.formType} />
+            <input className="session-submit" type="submit" value={(this.props.formType === 'login') ? "log in" : "sign up"} />
             
             
             <div className={(this.props.formType === 'login') ? "footbox" : "no-footbox"}>
