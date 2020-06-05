@@ -85,15 +85,14 @@ render() {
                     {/* <h4 className="italics">Choose a name that will give people a clear idea of what the group is about.</h4> */}
                     <input className="edit-input1" type='text' onChange={this.update('group_name')} value={this.state.group_name} />
                 </div>
-                <div className="create4-2">
+                <div className="edit-2">
                    <img className="create-icon" src="https://secure.meetupstatic.com/s/img/545971442246927/start_v2/tag.svg"/>
 
-                    <h6 className="create4-step"></h6>
-                    <h1>Edit what your group is about</h1>
-                    {/* <h4 className="italics2">What is this group's purpose?  Who should join your group?  Why should they join your group?</h4> */}
-                    <textarea className='text1' onChange={this.update('description')} value={this.state.description} />
+    
+                    <h1 id="edit-description" >Edit what your group is about</h1>
+                     <textarea className='description2' onChange={this.update('description')} value={this.state.description} />
                     <div className="submit-div">
-                        <input type="submit" className="create-submit" value="Update group" />
+                        <input type="submit" className="edit-submit" value="Update group" />
                         {/* <img className="delete-trash" onClick={this.handleDelete} src="https://meetbrite-seeds.s3.amazonaws.com/delete.png" /> */}
                         <button className="deletebtn" onClick={this.handleDelete}>Delete group</button>
                     </div>
