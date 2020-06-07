@@ -96,7 +96,7 @@ render() {
                         {/* <img className="delete-trash" onClick={this.handleDelete} src="https://meetbrite-seeds.s3.amazonaws.com/delete.png" /> */}
                         <button className="deletebtn" onClick={this.handleDelete}>Delete group</button>
                     </div>
-                </div>
+                </div>  
              </form>
             </div>
 
