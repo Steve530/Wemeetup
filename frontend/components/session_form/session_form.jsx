@@ -18,7 +18,7 @@ class SessionForm extends React.Component {
       [field]: e.currentTarget.value
     });
   }
-  demouser(e){
+  demouser(e){ 
     e.preventDefault();
     this.props.processForm({
       username: 'Steven',
