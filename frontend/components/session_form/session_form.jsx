@@ -30,7 +30,6 @@ class SessionForm extends React.Component {
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
   }
-  
   renderErrors() {
     return(
       <ul>
@@ -86,15 +85,13 @@ class SessionForm extends React.Component {
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="pass-input"
-          
               />
             </label>
             <br/>
             <br/>
             <br/> 
             <input className="session-submit" type="submit" value={(this.props.formType === 'login') ? "Log in" : "Sign up"} />
-            
-            
+
             <div className={(this.props.formType === 'login') ? "footbox" : "no-footbox"}>
               <div className="login-body-or">OR</div>
               <button onClick={this.demouser} className="demo-submit"  value='login'>Demo User Login </button>
