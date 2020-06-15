@@ -81,7 +81,7 @@ render() {
                 <div className="edit-group4-input">
                     <img className="create-icon" src="https://secure.meetupstatic.com/s/img/322408653975454564695/start_v2/textBubbles.svg"/>
 
-                    <h1 id="edit-group-name">Edit your group name</h1>
+                    <h2 id="edit-group-name">Edit your group name</h2>
                     {/* <h4 className="italics">Choose a name that will give people a clear idea of what the group is about.</h4> */}
                     <input className="edit-input1" type='text' onChange={this.update('group_name')} value={this.state.group_name} />
                 </div>
@@ -89,7 +89,7 @@ render() {
                    <img className="create-icon" src="https://secure.meetupstatic.com/s/img/545971442246927/start_v2/tag.svg"/>
 
     
-                    <h1 id="edit-description" >Edit what your group is about</h1>
+                    <h2 id="edit-description" >Edit what your group is about</h2>
                      <textarea className='description2' onChange={this.update('description')} value={this.state.description} />
                     <div className="submit-div">
                         <input type="submit" className="edit-submit" value="Update group" />

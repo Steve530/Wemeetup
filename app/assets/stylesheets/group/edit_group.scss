@@ -33,7 +33,7 @@
     align-items: center;
   }
   .edit-form {
-      margin-top: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 808px;
@@ -52,12 +52,7 @@ width: 688px;
 #edit-group-name {
     margin-left: 80px;
 }
-
-
-
-
-
-
+ 
  
 .edit-2{
     // position: absolute;
@@ -69,6 +64,7 @@ width: 688px;
 }
 
 .description2{
+    position: relative;
     margin-top: 15px;
     margin-left: 34px;
     width: 688px;
