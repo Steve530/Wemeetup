@@ -12,7 +12,7 @@ class EditGroupForm extends React.Component {
         this.handleDelete = this.handleDelete.bind(this);
     }
     
-
+  
 componentDidMount(){
      
     this.props.fetchGroup(this.props.match.params.groupId).then(({group}) => {
