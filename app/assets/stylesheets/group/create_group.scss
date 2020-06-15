@@ -173,9 +173,25 @@
   
   .create-disclaimer {
     margin-left: 90px;
-    font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  #form-name-input{
+    font-size: large;
+    background-color: #E8F0FE
+  }
+  #form-description-input{
+    position: relative;
+    width: 688px;
+    height: 200px;
+    left: 70px;
+    border-color: gainsboro;
+    background-color: #E8F0FE;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+    border-radius: 4px;
   }

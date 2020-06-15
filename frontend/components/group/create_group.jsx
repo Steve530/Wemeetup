@@ -53,7 +53,7 @@ class CreateGroup extends React.Component {
                     <span className="step-span">Step 1 of 3</span>
                   <label htmlFor='form-name'>What will your Meetup's name be?</label>
                       <input 
-                        id="form-name"
+                        id="form-name-input"
                         type="text" 
                         value={this.state.group_name}
                         onChange={this.update('group_name')}/>
@@ -65,7 +65,7 @@ class CreateGroup extends React.Component {
                     <label htmlFor='form-description'>Describe who should join, and what your Meetup <br/>
                       will do.</label>
                         <textarea 
-                          id="form-description"
+                          id="form-description-input"
                           type="text" 
                           value={this.state.description}
                           onChange={this.update('description')}/>
