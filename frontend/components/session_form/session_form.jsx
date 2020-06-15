@@ -77,7 +77,7 @@ class SessionForm extends React.Component {
               </label>
             </div>) : null
             }
-            <br/>
+            <br/> 
             <br/>
             <label><p id="password">Password:</p>
             <br/>
