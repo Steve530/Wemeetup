@@ -29,7 +29,7 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
-  }
+  } 
   renderErrors() {
     return(
       <ul>
@@ -47,7 +47,7 @@ class SessionForm extends React.Component {
 
         <div className="welcome-line"></div>
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          <br/>
+          <br/> 
           <div className='login_or_signup' >
             <h1 id="login-signup">{(this.props.formType === 'login') ? "Log in" : "Sign up"} </h1>
             <div id='Registered-with-us-yet'>Not registered with us yet?  {this.props.navLink}  </div>
