@@ -25,7 +25,7 @@ class SessionForm extends React.Component {
       password: '12345678'
     }).then(()=> this.props.history.push(`afterlogin`));
   }  
-  handleSubmit(e) {
+  handleSubmit(e) {  
     e.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then((user)=> this.props.history.push(`afterlogin`))  
