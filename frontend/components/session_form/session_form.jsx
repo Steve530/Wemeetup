@@ -19,7 +19,7 @@ class SessionForm extends React.Component {
     });
   }
   demouser(e){ 
-    e.preventDefault();
+    e.preventDefault(); 
     this.props.processForm({
       username: 'Steven',  
       password: '12345678'
