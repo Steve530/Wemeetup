@@ -21,7 +21,7 @@ class GroupIndexItem extends React.Component {
             <img src={`./${idd}.jpg`} />
           <div className="group-info_text">
             <h4 id="group-item-name">{this.props.group.group_name}</h4>
-            <p id="num-members">{this.props.group.membersarray} {this.props.group.group_name} members</p>
+            <p id="num-members">{this.props.group.membersarray} {(this.props.group.membersarray === 1) ? "member" : "members"}</p>
           </div>
         </div>
       </div>
