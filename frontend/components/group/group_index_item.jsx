@@ -25,7 +25,7 @@ class GroupIndexItem extends React.Component {
           </div>
         </div>
       </div>
-          )
+          )   
   }
 }
 
