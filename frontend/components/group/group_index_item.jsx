@@ -20,7 +20,7 @@ class GroupIndexItem extends React.Component {
         <div className="group-info">
             <img src={`./${idd}.jpg`} />
           <div className="group-info_text">
-            <h4 id="group-item-name">{(this.props.group.group_name.length <= 20 ) ? this.props.group.group_name : this.props.group.group_name.slice(0, 18)+"..." }</h4>
+            <h4 id="group-item-name">{(this.props.group.group_name.length <= 19 ) ? this.props.group.group_name : this.props.group.group_name.slice(0, 18)+"..." }</h4>
             <p id="num-members">{this.props.group.membersarray} {(this.props.group.membersarray === 1) ? "member" : "members"}</p>
           </div>
         </div>
