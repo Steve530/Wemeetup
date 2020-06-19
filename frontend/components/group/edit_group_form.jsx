@@ -34,7 +34,7 @@ handleSubmit(e) {
     if ((this.state.group_name.length < 1)||(this.state.description.length < 1)) alert('Group name or description can not be empty! :)')
     
         let newgroup = {
-            id: this.state.id,
+            id: this.state.id,  
             group_name: this.state.group_name,
             description: this.state.description,
             organizer_id: this.state.organizer_id
