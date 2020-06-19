@@ -21,8 +21,8 @@ class AfterloginIndexItem extends React.Component {
         <div className={this.props.type==="yourgroups" ? "group-info-yours" : "group-info2"}>
             <img src={`./${idd}.jpg`} />
           <div className="group-info-text">
-            <h4 id="group-item-name">{this.props.group.group_name}</h4>
-            <p id="num-members">{this.props.group.membersarray} {this.props.group.group_name} members</p>
+            <h4 id="group-item-name">{(this.props.group.group_name.length <= 19 ) ? this.props.group.group_name : this.props.group.group_name.slice(0, 18)+"..." }</h4>
+            <p id="num-members">{this.props.group.membersarray} {(this.props.group.membersarray === 1) ? "member" : "members"}</p>
     
           </div>  
         </div>
