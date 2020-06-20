@@ -11,7 +11,7 @@ class AfterloginIndexItem extends React.Component {
   handleClick() {  
     this.props.history.push(`/groups/${this.props.group.id}`)
   }  
-         
+            
   render() {
       let idd = this.props.group.id % 31;
       
