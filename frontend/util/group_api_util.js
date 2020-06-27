@@ -10,7 +10,7 @@ export const fetchGroup = (id) => {
     method: 'get',
     url: `/api/groups/${id}`
   })
-};
+}; 
 
 export const createGroup = (group) => {
   return $.ajax({
