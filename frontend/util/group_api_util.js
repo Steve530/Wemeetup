@@ -17,7 +17,7 @@ export const createGroup = (group) => {
     method: 'post',
     url: `/api/groups`,
     data: {group}
-  })
+  })  
 };
 
 export const updateGroup = (group) => {
