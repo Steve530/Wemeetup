@@ -102,6 +102,6 @@ class SessionForm extends React.Component {
       </div>
     );
   }
-}
+}  
 
 export default SessionForm;
