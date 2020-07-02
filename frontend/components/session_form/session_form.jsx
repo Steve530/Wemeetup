@@ -100,7 +100,7 @@ class SessionForm extends React.Component {
         </form>
 
       </div>
-    );
+    );  
   }
 }  
 
