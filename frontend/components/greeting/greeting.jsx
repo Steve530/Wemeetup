@@ -60,11 +60,13 @@ class Greeting extends React.Component {
      
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
+              <li>1</li>
+              <li>2</li>
               <button className="navbar-button2" onClick={this.handlelogout}>Log Out</button>
           </div>
       ) : (
               null
-          )
+          ) 
       }
     </div>
   );
