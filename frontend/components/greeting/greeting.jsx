@@ -73,6 +73,6 @@ class Greeting extends React.Component {
 
   return this.props.currentUser ? personalGreeting() : sessionLinks();
   }
-};
+}; 
 
 export default Greeting;
