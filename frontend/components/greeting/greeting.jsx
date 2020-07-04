@@ -51,7 +51,7 @@ class Greeting extends React.Component {
     <div className="hero">
        <hgroup className="header-group">
          <span className="header-icon"><Icon width="30" height="30"  icon={accountCircleOutline} /></span>
-         {/* <div className="border-right"></div> */}
+       
         <div className="dropdown">
           <i className="dropdown-arrow" onClick={this.yesmenu}><Icon icon={chevronDown} /></i>
         </div> 
