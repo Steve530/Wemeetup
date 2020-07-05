@@ -13,7 +13,7 @@ class AfterloginIndex extends React.Component {
    
   return( 
     <div className='afterlogin-groupandpics'>
-      <section id="member-home-header">
+      <section id="member-home-header"> 
           <div id="member-home-bounds">
                 <h2 className="heroPrimary">Find your next event</h2>
                   <p >  

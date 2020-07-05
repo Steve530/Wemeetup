@@ -5,7 +5,7 @@ import Greeting from './greeting';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = ({ session, entities: { users } },ownprops) => {
-
+  
   return {
     currentUser: users[session.id],
     ownprops: ownprops
