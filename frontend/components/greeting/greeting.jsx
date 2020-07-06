@@ -67,7 +67,7 @@ class Greeting extends React.Component {
         <Link to={`groups/${group.id}`} className="toggle_btnin">{group.group_name}</Link>
       )}</ul>
               <button className="navbar-button2" onClick={this.handlelogout}>Log Out</button>
-          </div>
+          </div> 
       ) : (
               null
           )  
