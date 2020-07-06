@@ -71,7 +71,7 @@ class Greeting extends React.Component {
       ) : (
               null  
           )  
-      } 
+      }   
     </div>
   );
 
