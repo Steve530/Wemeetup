@@ -15,7 +15,7 @@ class AfterloginIndexItem extends React.Component {
   render() {
       let idd = this.props.group.id % 31;
       
-    return (
+    return ( 
     
       <div className="group-index-item"  onClick={this.handleClick}>
         <div className={this.props.type==="yourgroups" ? "group-info-yours" : "group-info2"}>
