@@ -36,7 +36,9 @@ class Greeting extends React.Component {
           document.removeEventListener('click', this.nomenu);
       });
   }
+
   render() {
+    console.log(this.props.groups)
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
@@ -60,13 +62,15 @@ class Greeting extends React.Component {
      
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
-              <li>1</li>
-              <li>2</li>
+            
+      <ul>{this.props.groups.slice(0,5).map((group)=> 
+        <Link to={`groups/${group.id}`} className="toggle_btnin">{group.group_name}</Link>
+      )}</ul>
               <button className="navbar-button2" onClick={this.handlelogout}>Log Out</button>
           </div>
       ) : (
               null
-          ) 
+          )  
       } 
     </div>
   );

@@ -3,6 +3,8 @@ import AfterloginIndex from "./afterlogin_index";
 import { fetchGroups } from "../../actions/group_actions";
 
 const msp = (state) => {
+
+  debugger
   let groups = [];
   if (state.entities.groups) {
     groups =  Object.values(state.entities.groups)
