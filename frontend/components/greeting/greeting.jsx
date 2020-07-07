@@ -14,6 +14,7 @@ class Greeting extends React.Component {
       };
    
       this.handlelogout = this.handlelogout.bind(this);
+      this.seeyourgroups = this.seeyourgroups.bind(this);
       this.yesmenu = this.yesmenu.bind(this);
       this.nomenu = this.nomenu.bind(this);
   }
@@ -31,6 +32,9 @@ class Greeting extends React.Component {
     this.props.logout();
     this.props.history.push("/")
   }
+  seeyourgroups(){
+    this.props.history.push("/afterlogin")
+  }
   nomenu() {
       this.setState({ yesmenu: false }, () => {
           document.removeEventListener('click', this.nomenu);
@@ -38,7 +42,7 @@ class Greeting extends React.Component {
   }
 
   render() {
-    console.log(this.props.groups)
+   
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
@@ -63,10 +67,15 @@ class Greeting extends React.Component {
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
             
-      <ul>{this.props.groups.slice(0,5).map((group)=> 
-        <Link to={`groups/${group.id}`} className="toggle_btnin">{group.group_name}</Link>
-      )}</ul>
-              <button className="navbar-button2" onClick={this.handlelogout}>Log Out</button>
+              <ul className="dropdown_groups">{this.props.groups.slice(0,5).map((group)=> 
+                <ul className="separate_groupname">
+                  <Link to={`groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
+
+                </ul>
+              )}</ul>
+              <button className="see_your_groups" onClick={this.seeyourgroups}>See all your groups  > </button>
+              <ul className="profile" >Profile</ul>
+              <ul className="navbar-button2" onClick={this.handlelogout}>Log out</ul>
           </div> 
       ) : (
               null  

@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import {
   fetchGroup, 
+  fetchGroups,
   createMembership, 
   deleteMembership
 } from "../../actions/group_actions";
@@ -17,6 +18,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => ({
   fetchGroup: id => dispatch(fetchGroup(id)),
+  fetchGroups: () => dispatch(fetchGroups()),
   
   joinGroup: id => dispatch(createMembership(id)),
   leaveGroup: id => dispatch(deleteMembership(id))  

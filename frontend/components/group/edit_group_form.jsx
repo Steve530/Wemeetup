@@ -18,6 +18,7 @@ componentDidMount(){
     this.props.fetchGroup(this.props.match.params.groupId).then(({group}) => {
         this.setState({...group});
     });
+    this.props.fetchGroups()
 }
 
 componentDidUpdate(prevProps) {

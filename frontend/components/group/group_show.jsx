@@ -13,7 +13,8 @@ class GroupShow extends React.Component {
       this.leaveGroup = this.leaveGroup.bind(this);
     }
     componentDidMount(){
-        this.props.fetchGroup(this.props.ownProps.match.params.groupId)
+        this.props.fetchGroup(this.props.ownProps.match.params.groupId);
+        this.props.fetchGroups()
     }
 
     joinGroup(e) {

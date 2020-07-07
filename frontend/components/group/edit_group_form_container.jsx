@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import EditGroupForm from './edit_group_form';
-import {fetchGroup, updateGroup, deleteGroup } from '../../actions/group_actions';
+import {fetchGroup,fetchGroups, updateGroup, deleteGroup } from '../../actions/group_actions';
 
 const msp = (state, ownProps) => {
      
@@ -23,6 +23,8 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
     return {
         fetchGroup: id => dispatch(fetchGroup(id)),
+        fetchGroups: () => dispatch(fetchGroups()),
+
         action: group => dispatch(updateGroup(group)),
         deleteGroup: id => dispatch(deleteGroup(id))
     };
