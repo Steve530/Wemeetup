@@ -77,7 +77,7 @@ class Greeting extends React.Component {
               <ul className="profile" >Profile</ul>
               <ul className="navbar-button2" onClick={this.handlelogout}>Log out</ul>
           </div> 
-      ) : (
+      ) : (  
               null  
           )    
       }     
