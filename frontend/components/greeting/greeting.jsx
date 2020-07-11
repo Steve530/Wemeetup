@@ -81,7 +81,7 @@ class Greeting extends React.Component {
               null  
           )    
       }     
-    </div>
+    </div> 
   );
 
   return this.props.currentUser ? personalGreeting() : sessionLinks();
