@@ -70,7 +70,7 @@ class Greeting extends React.Component {
               <ul className="dropdown_groups">{this.props.groups.slice(0,5).map((group)=> 
                 <ul className="separate_groupname">
                   <Link to={`groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
-
+ 
                 </ul>
               )}</ul>
               <button className="see_your_groups" onClick={this.seeyourgroups}>See all your groups  > </button>
@@ -80,7 +80,7 @@ class Greeting extends React.Component {
       ) : (
               null  
           )    
-      }    
+      }     
     </div>
   );
 
