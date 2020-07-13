@@ -50,7 +50,7 @@ class Greeting extends React.Component {
         <Link to="/signup" className="toggle_btnup" >Sign up</Link>
         <hr className="login-border"/>
 
-      </div>
+      </div>  
     </div>
   );  
   const personalGreeting = () => (
