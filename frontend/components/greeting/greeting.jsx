@@ -78,7 +78,7 @@ class Greeting extends React.Component {
               <ul className="navbar-button2" onClick={this.handlelogout}>Log out</ul>
           </div> 
       ) : (  
-              null  
+              null   
           )    
       }     
     </div> 
