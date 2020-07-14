@@ -51,7 +51,7 @@ class Greeting extends React.Component {
         <hr className="login-border"/>
 
       </div>  
-    </div>
+    </div>  
   );  
   const personalGreeting = () => (
     <div className="hero">
