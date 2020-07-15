@@ -42,7 +42,7 @@ class Greeting extends React.Component {
   }
 
   render() {
-   
+   debugger
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
@@ -69,7 +69,7 @@ class Greeting extends React.Component {
             
               <ul className="dropdown_groups">{this.props.groups.slice(0,5).map((group)=> 
                 <ul className="separate_groupname">
-                  <Link to={`groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
+                  <Link to={`/groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
  
                 </ul>
               )}</ul>
