@@ -42,7 +42,7 @@ class Greeting extends React.Component {
   }
 
   render() {
-   debugger
+   
   const sessionLinks = () => (
     <div className="hero"> 
       <div className="login-signup">  
