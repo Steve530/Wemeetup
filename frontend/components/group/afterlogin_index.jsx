@@ -1,14 +1,25 @@
 import React from 'react';
 import AfterloginIndexItem from '../group/afterlogin_index_item';
 import { Link } from "react-router-dom";
+import { Icon, InlineIcon } from '@iconify/react';
+import bxSearch from '@iconify/icons-bx/bx-search';
 
 class AfterloginIndex extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }  
+  constructor(props) {
+    super(props);
+    this.state = {  
+      search: ''
+    }; 
+  }       
  componentDidMount() {
    this.props.fetchGroups();
  }
+ update(field) {
+  return e => this.setState({
+    [field]: e.currentTarget.value
+  });
+}
+
  render() {
    
   return( 
@@ -21,11 +32,22 @@ class AfterloginIndex extends React.Component {
                     174 events in your groups  . 1,295 events near you  
                     </span> 
                   </p> 
+                 
           </div> 
       </section> 
       <div className="all-groups-images">
+
             <h2 id='afterlogin-urgroups'>YOUR GROUPS</h2>
             <div className='your_groups'>
+                  <div className="search_container" >
+                    <input id="search_input" type="text" value={this.state.search} onChange={this.update('search')}/>
+                    <div id="search_caption"  > within  <a className="search_caption2" href=""> 5 miles</a> of  <a className="search_caption2" href="">  San Francisco, CA</a></div>
+                  <div className="search_icon">
+                    <Icon width="25" height="25" icon={bxSearch} />
+                  </div> 
+                   
+                  </div>
+
               { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
               <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
             </div>
