@@ -66,7 +66,14 @@ nomenu() {
                   </div>
                   <div className="dropdown_allgroups"> 
                      {this.state.yesmenu ? (
-                        <div className="dropdown_allgroups2">All Groups </div>
+                        <div className="dropdown_allgroups2">
+                            <ul className="dropdown_groups3">{this.props.groups.slice(0,25).map((group)=> 
+                                 <ul className="separate_groupname3">
+                                   <Link to={`/groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
+  
+                                  </ul>
+                            )}</ul>
+                        </div>
                      ) : ( null )
                      }
             </div>
