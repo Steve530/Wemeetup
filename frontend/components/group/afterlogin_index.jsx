@@ -15,7 +15,7 @@ class AfterloginIndex extends React.Component {
   }       
  componentDidMount() {
    this.props.fetchGroups();
- }
+ }   
  yesmenu(e) {
   e.preventDefault();
 
