@@ -18,7 +18,7 @@ class AfterloginIndex extends React.Component {
  }     
  yesmenu(e) {  
   e.preventDefault();
-
+  
   this.setState({ 
       yesmenu: true,
   }, () => {
