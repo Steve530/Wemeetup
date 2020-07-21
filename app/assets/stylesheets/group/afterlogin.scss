@@ -20,10 +20,10 @@
     right:100px;
 }
 #afterlogin-urgroups {
-    position: relative;
+    position: absolute;
     font-size: 13px;
     font-weight: 600;
-    top: 265px;
+    top: 260px;
     left: 12px;
     z-index: 4;
     color: rgb(33, 33, 33);
@@ -62,6 +62,14 @@
     margin-right: 10px;
     flex-wrap: wrap;
 }
+.your_groups_second_edit {
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
 .group-info-yours img {
     width: 228px;
     height: 180px;
@@ -81,6 +89,15 @@
     margin-left: 10px;
     margin-right: 10px;
     flex-wrap: wrap;
+}
+.afterlogin_search_pic {
+    margin-top: 30px;
+    display: flex;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
 }
 .group-info2 img {
     width: 309.33px;
@@ -161,7 +178,7 @@
      z-index: 5;
      position: absolute;
      left: 24px;
-     top: 243px;
+     top: 230px;
      border-radius: 3px;
      box-shadow: 0 0 5px #666;
      float: left;
@@ -238,5 +255,16 @@
     border-style: solid ;
     border-width: 0 10px 10px;
     border-color: transparent transparent #fff;
+  }
+  #Search_Result{
+      position: relative;
+      display: block;
+      top: -10px;
+      left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(33, 33, 33);
+      font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    //   background-color: yellow;
   }
  

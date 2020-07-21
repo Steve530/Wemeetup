@@ -37,13 +37,13 @@ class CreateGroup extends React.Component {
     return (
       <div className="create-group-container">
 
-        <div className="create-banner">
-          <h1 className="create-title">Start a new Meetup?</h1>
-          <span className="group-span">make it happen</span>
-        </div>
+          <div className="create-banner">
+            <h1 className="create-title">Start a new Meetup?</h1>
+            <span className="group-span">make it happen</span>
+          </div>
 
         <div className="create-group-section">
-        <form className="create-form" onSubmit={this.handleSubmit}>
+          <form className="create-form" onSubmit={this.handleSubmit}>
 
 
             <div className='create-group-inputs-container'>
@@ -84,11 +84,11 @@ class CreateGroup extends React.Component {
                     </div>
                   
 
-            </div>
-          <p className="create-disclaimer">We review all MeetSups based on our Community Guidelines</p>
-          <input className="create-submit-button" type="submit" value="Agree & Continue"/>
-        
-         </form>
+              </div>
+            <p className="create-disclaimer">We review all MeetSups based on our Community Guidelines</p>
+            <input className="create-submit-button" type="submit" value="Agree & Continue"/>
+          
+          </form>
          </div>
       </div>
     )
