@@ -164,6 +164,65 @@
      top: 243px;
      border-radius: 3px;
      box-shadow: 0 0 5px #666;
+     float: left;
+      
+    }
+    .dropdown_part1 {
+         position: absolute;
+        width: 230px;
+        left: 30px;
+        margin-top: 15px;
+
+ }
+    .dropdown_part2 {
+        position: absolute;
+        width: 230px;
+        left: 260px;
+        margin-top: 15px;
+
+ }
+    .dropdown_part3 {
+
+        margin-top: 15px;
+        position: absolute;
+        width: 230px;
+        left: 490px;
+ }
+    .dropdown_part4 {
+        position: absolute;
+        width: 200px;
+        margin-top: 15px;
+        left: 720px;
+ }
+ .separate_groupname3{
+     font-size: 16px;
+     margin: 3px;
+     text-rendering: optimizeLegibility;
+     font-feature-settings: "liga","kern";
+     padding: 8px;
+     display: block;
+   
+ }
+ .separate_groupname3:hover {
+     background-color: rgb(247, 64, 95);
+     color: white;
+ }
+ .dropdown_groupnames:hover {
+     background-color: rgb(247, 64, 95);
+     color: white;
+     
+ }
+ .dropdown_groupnames {
+    font-size: 16px;
+    margin: 3px;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga","kern";
+    padding: 8px;
+    font-weight: 400;
+    color: #757575;
+    font-family: "Graphik Meetup",helvetica,arial,sans-serif;
+    text-decoration-color:rgb(117, 117, 117);
+
  }
  .dropdown_allgroups2:after {
 
