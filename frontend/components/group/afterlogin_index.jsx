@@ -131,7 +131,7 @@ nomenu() {
               <div>
                     <h4 id='Search_Result'>Search Result:</h4>
                       <div className='afterlogin_search_pic'>
-                        {this.props.groups.filter(group => group.group_name.includes(this.state.search)||group.description.includes(this.state.search)).map(
+                        {this.props.groups.filter(group => group.group_name.toLowerCase().includes(this.state.search)||group.description.toLowerCase().includes(this.state.search)).map(
                           group => <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>
                         )}
                         
