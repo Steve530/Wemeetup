@@ -126,7 +126,7 @@ nomenu() {
                                   { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}
                                 </div>  
                           </div>
-                  </div>
+                  </div>  
             ) : (
               <div>
                     <h4 id='Search_Result'>Search Result:</h4>
