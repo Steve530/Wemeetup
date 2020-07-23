@@ -125,7 +125,7 @@ nomenu() {
                                 <div className='afterlogin_group_pic'>
                                   { this.props.groups.map(group=> <AfterloginIndexItem type="allgroups"  key = {group.id} group={group}/>)}
                                 </div>  
-                          </div>
+                          </div>   
                   </div>  
             ) : (
               <div>
