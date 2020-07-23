@@ -82,7 +82,7 @@ nomenu() {
                                                   <Link to={`/groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
                                                 </ul>
                                             )}</ul>
-                                      </div>
+                                      </div>  
                                       <div>
                                           <ul className="dropdown_part2">{this.props.groups.slice(7,14).map((group)=> 
                                                 <ul className="separate_groupname3">
@@ -109,7 +109,7 @@ nomenu() {
                         }
                     </div>
                    
-            </div>
+            </div> 
             { this.state.search_or_not ?  (
                   <div >
                           <div className='your_groups_second_edit'>
@@ -117,7 +117,7 @@ nomenu() {
                               { this.props.groups.filter(group => group.members.includes(this.props.currentUser_id) ).map(group=> 
                               <AfterloginIndexItem type="yourgroups" key = {group.id} group={group}/>)}
                              <h2 id='afterlogin-urgroups'>YOUR GROUPS</h2>
-                          </div>
+                          </div>  
 
                              <hr className="afterlogin-border"/>
                             <div className="groupsbelow">
