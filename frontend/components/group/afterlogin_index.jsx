@@ -72,7 +72,7 @@ nomenu() {
                                             <div className="search_icon">
                                               <Icon width="25" height="25" icon={bxSearch} onClick={this.handle_search} />
                                             </div> 
-                              </div>
+                              </div>  
                     <div className="dropdown_allgroups"> 
                        {this.state.yesmenu ? (
                               <div className="dropdown_allgroups2">
