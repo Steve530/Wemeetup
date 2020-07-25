@@ -65,7 +65,7 @@ nomenu() {
         <div className="all-groups-images">
            
              <div className='your_groups'>
-                              <div className="search_container" >
+                              <div className="search_container" > 
                                   <input id="search_input" type="text" value={this.state.search} onChange={this.update('search')} onClick={this.yesmenu}/>
                                     <div id="search_caption"  > Find groups that you're interested in!
                                     {/* <div id="search_caption"  > within<a className="search_caption2" href=""> 5 miles</a> of<a className="search_caption2" href="">  San Francisco, CA</a> */}
