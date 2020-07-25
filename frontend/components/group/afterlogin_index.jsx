@@ -75,7 +75,7 @@ nomenu() {
                                             </div> 
                               </div>    
                     <div className="dropdown_allgroups"> 
-                       {this.state.yesmenu ? (
+                       {this.state.yesmenu ? (  
                               <div className="dropdown_allgroups2">
                                       <div>
                                           <ul className="dropdown_part1">{this.props.groups.slice(0,6).map((group)=> 
