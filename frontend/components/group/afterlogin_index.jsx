@@ -90,7 +90,7 @@ nomenu() {
                                                   <Link to={`/groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
                                                 </ul>
                                             )}</ul>   
-                                      </div> 
+                                      </div>   
                                       <div>          
                                           <ul className="dropdown_part3">{this.props.groups.slice(15,22).map((group)=> 
                                               <ul className="separate_groupname3">
