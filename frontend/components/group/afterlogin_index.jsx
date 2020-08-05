@@ -103,7 +103,7 @@ nomenu() {
                                             <ul className="separate_groupname3">
                                               <Link to={`/groups/${group.id}`} className="dropdown_groupnames">{group.group_name}</Link>
                                             </ul>
-                                        )}</ul>    
+                                        )}</ul>       
                                       </div>  
                               </div>     
                           ) : ( null )
