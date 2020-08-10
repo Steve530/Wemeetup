@@ -61,7 +61,7 @@ class Greeting extends React.Component {
         <div className="dropdown">
           <i className="dropdown-arrow" onClick={this.yesmenu}><Icon icon={chevronDown} /></i>
         </div> 
- 
+  
        </hgroup> 
           
       {this.state.yesmenu ? (
