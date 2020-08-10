@@ -63,7 +63,7 @@ class Greeting extends React.Component {
         </div> 
  
        </hgroup>
-       
+         
       {this.state.yesmenu ? (
           <div className="navbar-dropdown">
             
