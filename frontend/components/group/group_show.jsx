@@ -71,7 +71,7 @@ class GroupShow extends React.Component {
                                 <div>
                                     <div id='organizer-name'>{this.props.group.organizer.username}</div>
                                 </div>  
-                            </div>
+                            </div>  
 
                     <button className={showmanage}> <Link className="link-join22" to={`/groups/${this.props.group.id}/manage`}>Manage Group</Link></button>
                     <button className='join_group_btn'>{showjoin}</button>
