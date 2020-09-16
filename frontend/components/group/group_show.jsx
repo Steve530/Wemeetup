@@ -68,7 +68,7 @@ class GroupShow extends React.Component {
                     <div className='icon3organizer'><Icon icon={saguiIcon} /></div>
                     <div className='right-org'>
                                 <h3 id='organizedby'>Organized By:</h3>
-                                <div>
+                                <div>  
                                     <div id='organizer-name'>{this.props.group.organizer.username}</div>
                                 </div>  
                             </div>  
