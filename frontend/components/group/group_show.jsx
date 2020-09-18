@@ -64,7 +64,7 @@ class GroupShow extends React.Component {
                    
                     <div className='icon2member'><Icon icon={mithrilIcon} /></div>
                     <div className='show-members'>Member ( {this.props.group.membersarray} ) </div>
-                      
+                        
                     <div className='icon3organizer'><Icon icon={saguiIcon} /></div>
                     <div className='right-org'>
                                 <h3 id='organizedby'>Organized By:</h3>
