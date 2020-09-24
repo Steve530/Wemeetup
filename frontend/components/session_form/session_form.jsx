@@ -96,7 +96,7 @@ class SessionForm extends React.Component {
               <div className="login-body-or">OR</div>
               <button onClick={this.demouser} className="demo-submit"  value='login'>Demo User Login </button>
             </div>      
-           </div>                 
+           </div>                   
         </form>   
 
       </div>   
