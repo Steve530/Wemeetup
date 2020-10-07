@@ -10,7 +10,7 @@ const receiveAllGroups = (groups) => {
     type: RECEIVE_GROUPS,
     groups
   }
-}
+}  
 
 const receiveGroup = (payload) => {
   return {
