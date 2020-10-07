@@ -8,7 +8,7 @@ export const REMOVE_GROUP = "REMOVE_GROUP";
 const receiveAllGroups = (groups) => {
   return {
     type: RECEIVE_GROUPS,
-    groups
+    groups 
   }
 }  
 
